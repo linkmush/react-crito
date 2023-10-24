@@ -3,6 +3,7 @@ import FeatureSection from './components/FeatureSection';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import MemberSection from './components/MemberSection';
+import OurServices from './components/OurServices';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <main>
        <FeatureSection />
+       <OurServices />
        <MemberSection />
       </main>
       <Footer />
