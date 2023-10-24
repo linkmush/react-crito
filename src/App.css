@@ -84,37 +84,37 @@ html, body {
   font-size: 40px;
 }
 
-header {
+.nav-section {
   background-color: #F0EFE9;
   display: flex;
   padding: 16px;
 }
-header .container {
+.nav-section .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 68px;
 }
-header .container .bars {
+.nav-section .container .bars {
   font-size: 25px;
   background-color: transparent;
   border: none;
 }
 @media (min-width: 992px) {
-  header .container .bars {
+  .nav-section .container .bars {
     display: none;
   }
 }
-header .container .menu {
+.nav-section .container .menu {
   display: none;
   flex: 1;
 }
 @media (min-width: 992px) {
-  header .container .menu {
+  .nav-section .container .menu {
     display: block;
   }
 }
-header .container .menu .top-menu {
+.nav-section .container .menu .top-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -122,20 +122,20 @@ header .container .menu .top-menu {
   padding-bottom: 10px;
 }
 @media (min-width: 1400px) {
-  header .container .menu .top-menu {
+  .nav-section .container .menu .top-menu {
     justify-content: space-between;
   }
 }
-header .container .menu .top-menu .contact-information {
+.nav-section .container .menu .top-menu .contact-information {
   display: none;
   align-items: center;
 }
 @media (min-width: 1400px) {
-  header .container .menu .top-menu .contact-information {
+  .nav-section .container .menu .top-menu .contact-information {
     display: flex;
   }
 }
-header .container .menu .top-menu .contact-information .phone {
+.nav-section .container .menu .top-menu .contact-information .phone {
   padding-right: 30px;
   margin-right: 28px;
   border-right: 1px solid #DAD9D3;
@@ -143,15 +143,15 @@ header .container .menu .top-menu .contact-information .phone {
   font-size: 1.2em;
   color: #191919;
 }
-header .container .menu .top-menu .contact-information .phone a {
+.nav-section .container .menu .top-menu .contact-information .phone a {
   margin-right: 6px;
   color: #191919;
   transition: all 0.3s ease-in-out;
 }
-header .container .menu .top-menu .contact-information .phone a:hover {
+.nav-section .container .menu .top-menu .contact-information .phone a:hover {
   color: #f7b206;
 }
-header .container .menu .top-menu .contact-information .email {
+.nav-section .container .menu .top-menu .contact-information .email {
   padding-right: 30px;
   margin-right: 29px;
   border-right: 1px solid #DAD9D3;
@@ -159,54 +159,54 @@ header .container .menu .top-menu .contact-information .email {
   font-size: 1.2em;
   color: #191919;
 }
-header .container .menu .top-menu .contact-information .email a {
+.nav-section .container .menu .top-menu .contact-information .email a {
   margin-right: 9px;
   color: #191919;
   transition: all 0.3s ease-in-out;
 }
-header .container .menu .top-menu .contact-information .email a:hover {
+.nav-section .container .menu .top-menu .contact-information .email a:hover {
   color: #f7b206;
 }
-header .container .menu .top-menu .contact-information .location {
+.nav-section .container .menu .top-menu .contact-information .location {
   font-family: "Inter";
   font-size: 15px;
   font-size: 1.2em;
   color: #191919;
 }
-header .container .menu .top-menu .contact-information .location a {
+.nav-section .container .menu .top-menu .contact-information .location a {
   margin-right: 8px;
   color: #191919;
   transition: all 0.3s ease-in-out;
 }
-header .container .menu .top-menu .contact-information .location a:hover {
+.nav-section .container .menu .top-menu .contact-information .location a:hover {
   color: #f7b206;
 }
-header .container .menu .top-menu .social-media a {
+.nav-section .container .menu .top-menu .social-media a {
   color: black;
   margin-left: 18px;
   font-size: 1.3em;
   transition: all 0.3s ease-in-out;
 }
-header .container .menu .top-menu .social-media a:hover {
+.nav-section .container .menu .top-menu .social-media a:hover {
   color: #f7b206;
 }
-header .container .menu .main-menu {
+.nav-section .container .menu .main-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
 }
-header .container .menu .main-menu nav a {
+.nav-section .container .menu .main-menu nav a {
   display: inline-block;
   color: #191919;
   text-decoration: none;
   margin-right: 38px;
   position: relative;
 }
-header .container .menu .main-menu nav a.active {
+.nav-section .container .menu .main-menu nav a.active {
   font-weight: 500;
 }
-header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
+.nav-section .container .menu .main-menu nav a.active::after, .nav-section .container .menu .main-menu nav a:hover::after {
   content: "";
   position: absolute;
   font-weight: 500;
@@ -223,7 +223,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   position: relative;
   z-index: 0;
 }
-.showcase .backround-lines {
+.showcase .background-lines {
   display: none;
   position: absolute;
   bottom: 0px;
@@ -231,7 +231,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   z-index: -1;
 }
 @media (min-width: 860px) {
-  .showcase .backround-lines {
+  .showcase .background-lines {
     display: block;
   }
 }

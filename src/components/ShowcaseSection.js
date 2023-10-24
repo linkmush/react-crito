@@ -16,7 +16,7 @@ function ShowcaseSection() {
                 <Button text="Get Consulting" url="/services/get-consulting" />
                 <Button text="Learn More" url="/services/consulting" />
         </div>
-        <img src={img_showcase} alt="image of a man" />
+        <img className="img" src={img_showcase} alt="image of a man" />
     </div>
     </section>  
   )
