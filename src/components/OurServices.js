@@ -2,6 +2,8 @@ import React from 'react'
 import ServiceBox from './ServiceBox'
 
 import img_backgroundlinesright from '../assets/images/background-lines-right.svg'
+import SectionTitle from './Generics/SectionTitle'
+import Button from './Generics/Button'
 
 const OurServices = () => {
   return (
@@ -9,18 +11,16 @@ const OurServices = () => {
     <img className="backround-swirl-lines" src={img_backgroundlinesright} alt="backround-lines-right" />
     <div className="container">
         <div className="the-best-service">
-            <p>Our Service</p>
-            <h2>We Provide The Best</h2>
-            <h2>Service For Consulting</h2>
+            <SectionTitle title="Our Services" description="We Provide The Best Service For Consulting" />
         </div>
         <div className="four-squares">
-        <ServiceBox title="Business Advice" description="Lorem, ipsum dolor sit amet consecetur adipisicing elit. Officiis in nam possimus" link="services/businessadvice" />
-        <ServiceBox title="Startup Business" description="Lorem, ipsum dolor sit amet consecetur adipisicing elit. Officiis in nam possimus" link="services/startupbusiness" />
-        <ServiceBox title="Financial Advice" description="Lorem, ipsum dolor sit amet consecetur adipisicing elit. Officiis in nam possimus" link="/services/FinancialAdvice" />
-        <ServiceBox title="Risk Management" description="Lorem, ipsum dolor sit amet consecetur adipisicing elit. Officiis in nam possimus" link="services/riskmanagement" />
+        <ServiceBox title="Business Advice" description="Lorem, ipsum dolor sit amet consecetur adipisicing elit. Officiis in nam possimus" url="/services/businessadvice" />
+        <ServiceBox title="Startup Business" description="Lorem, ipsum dolor sit amet consecetur adipisicing elit. Officiis in nam possimus" url="/service/startupbusiness" />
+        <ServiceBox title="Financial Advice" description="Lorem, ipsum dolor sit amet consecetur adipisicing elit. Officiis in nam possimus" url="/services/financialAdvice" />
+        <ServiceBox title="Risk Management" description="Lorem, ipsum dolor sit amet consecetur adipisicing elit. Officiis in nam possimus" url="/services/riskmanagement" />
         </div>
         <div className="center-button">
-            <button className="btn-transparent">Browse Services <ion-icon id="arrow" name="arrow-forward-outline"></ion-icon></button>
+        <Button className="btn-transparent" text="Browse Services" url="/services" />
         </div>
     </div>
     </section>

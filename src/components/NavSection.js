@@ -39,7 +39,7 @@ const NavSection = () => {
                     <a href="#">News</a>
                     <a href="contact.html">Contact</a>
                 </nav>
-                <Button text="Login" url="/login" />
+                <Button type="yellow" text="Login" url="/login" />
             </div>
         </div>
     </div>

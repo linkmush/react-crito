@@ -5,7 +5,9 @@ const ServiceBox = ({title, description, url}) => {
     <div className="service-box">
       <h3>{title}</h3>
       <p>{description}</p>
-      <button className="circle-arrow" url={url}><ion-icon id="arrow" name="arrow-forward-outline"></ion-icon></button>
+      <a href={url} className="circle-arrow">
+        <ion-icon id="arrow" name="arrow-forward-outline"></ion-icon>
+      </a>
     </div>
   )
 }
