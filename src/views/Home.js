@@ -10,7 +10,7 @@ import OurServices from '../components/OurServices';
 
 const Home = () => {
   return (
-    <div className="wrapper">
+  <>
     <Header />
     <main>
      <FeatureSection />
@@ -19,7 +19,7 @@ const Home = () => {
     </main>
     <Footer />
     <FooterBottom />
-  </div>
+  </>
   )
 }
 

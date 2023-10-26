@@ -12,6 +12,7 @@ import NotFound from './views/NotFound';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div className="wrapper">
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home /> } />
@@ -21,5 +22,6 @@ root.render(
         <Route path='*' element={<NotFound /> } />
       </Routes>
     </BrowserRouter>
+    </div>
   </React.StrictMode>
 );
