@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Button = ({type, text, url }) => {
 
@@ -15,9 +16,9 @@ const Button = ({type, text, url }) => {
   }
 
   return (
-    <a className={getButtonClassname()} href={url}>{text}
+    <Link  className={getButtonClassname()} to={url}>{text}
         <ion-icon id="arrow" name="arrow-forward-outline"></ion-icon>
-    </a>
+    </Link>
   )
 }
 

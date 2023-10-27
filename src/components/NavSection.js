@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from  'react-router-dom'
+import { NavLink, Link } from  'react-router-dom'
 import Button from './Generics/Button'
 
 import Logotype from  '../assets/images/logotype.svg'
@@ -8,13 +8,13 @@ const NavSection = () => {
   return (
     <section className="nav-section">
     <div className="container">
-        <NavLink to="/"><img src={Logotype} alt="logo" /></NavLink>
+        <Link to="/"><img src={Logotype} alt="logo" /></Link>
         <button className="bars"><ion-icon name="menu-outline"></ion-icon></button>
         <div className="menu">
             <div className="top-menu">
                 <div className="contact-information">
                     <div className="phone">
-                        <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                        <Link to="/"><ion-icon name="call-outline"></ion-icon></Link>
                         +46 (8) 121 470 50
                     </div>
                     <div className="email">
@@ -27,10 +27,10 @@ const NavSection = () => {
                     </div>
                 </div>
                 <div className="social-media">
-                    <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <Link to="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></Link>
+                    <Link to="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></Link>
+                    <Link to="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></Link>
+                    <Link to="https://www.linkedin.com/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></Link>
                 </div>
             </div>
             <div className="main-menu">
