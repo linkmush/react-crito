@@ -8,7 +8,7 @@ const NavSection = () => {
   return (
     <section className="nav-section">
     <div className="container">
-        <a href="#"><img src={Logotype} alt="logo" /></a>
+        <NavLink to="/"><img src={Logotype} alt="logo" /></NavLink>
         <button className="bars"><ion-icon name="menu-outline"></ion-icon></button>
         <div className="menu">
             <div className="top-menu">
