@@ -1,8 +1,13 @@
 import React from 'react'
 
+import '../App.css';
+import NavSection from '../components/NavSection';
+
 const NewsDetails = () => {
   return (
-    <div>NewsDetails</div>
+  <>
+    <NavSection /> 
+  </>
   )
 }
 

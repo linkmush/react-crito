@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from  'react-router-dom'
 import Button from './Generics/Button'
 
 import Logotype from  '../assets/images/logotype.svg'
@@ -34,10 +35,10 @@ const NavSection = () => {
             </div>
             <div className="main-menu">
                 <nav>
-                    <a className="active" href="index.html">Home</a>
-                    <a href="#">Service</a>
-                    <a href="#">News</a>
-                    <a href="contact.html">Contact</a>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/services">Services</NavLink>
+                    <NavLink to="/news">News</NavLink>
+                    <NavLink to="/contact">Contacs</NavLink>
                 </nav>
                 <Button type="yellow" text="Login" url="/login" />
             </div>
