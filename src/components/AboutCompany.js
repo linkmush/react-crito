@@ -24,7 +24,7 @@ const AboutCompany = () => {
             <div className="about-company-buttons">
                 <Button type="btn-black" text="Learn More" url="/services/consulting" />
                 <Link to="/" className="play-video" href="#"><ion-icon name="play-outline"></ion-icon></Link>
-                <p className="intro-video">Intro Video<ion-icon></ion-icon></p>
+                <p className="intro-video">Intro Video</p>
             </div>
         </div>
     </div>
