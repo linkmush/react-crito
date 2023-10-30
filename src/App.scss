@@ -359,6 +359,284 @@ html, body {
     }
 }
 
+.features {
+    .container {
+        display: flex;
+
+        @media (min-width: 600px) {
+            border-color: rgba(25,25,25,0.2 );
+            border-width: 1.2000000476837158px;
+            border-style: solid;
+            border-radius: 2px;
+            width: 1700px;
+            height: 700px;
+            margin-top: 80px;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title-button {
+
+            p {
+                font-family: "Inter";
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                color: #f94d1c;
+                margin-top: 161px;
+
+                @media (max-width:700px) {
+                    margin-top: 30px;
+                }
+            }
+
+            h2 {
+                font-family: "DM Sans";
+                font-size: 45px;
+                font-weight: bold;
+                line-height: 54px;
+                font-style: normal;
+                color: #191919;
+                margin-top: 17px;
+
+                @media (max-width:700px) {
+                    font-size: 35px;
+                }
+
+            }
+            
+            .btn-yellow {
+                width: 460px;
+                margin-top: 48px;
+
+                @media (max-width: 686px) {
+                    width: 238px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            @media (max-width: 1286px) {
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        .feature-advice {
+            display: none;
+
+            @media (min-width: 1234px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .child-1 {
+                margin-top: 190px;
+                margin-left: 103px;
+            }
+
+            .child-2 {
+                margin-left: 103px;
+                margin-top: -80px;
+            }
+            
+            article {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-width: 1px;
+                    margin-bottom: 28px;
+                }
+
+                h3 {
+                    font-family: "DM Sans";
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 25px;
+                    font-style: normal;
+                    color: rgba(25,25,25,0.7 );
+                }
+            }
+        }
+    }
+}
+
+.about-company {
+    .container {
+        display: flex;
+        position: relative;
+
+        .founder {
+            display: none;
+            position: relative;
+
+            @media (min-width: 1400px) {
+                display: inline;
+            }
+          
+            .picture-woman {
+                width: 533px;
+                height: 615px;
+                z-index: 1;
+                margin-top: 122px;
+                margin-bottom: 120px;
+                margin-left: 156px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .square-picture {
+                position: absolute;
+                width: 368px;
+                height: 180px;
+                top: 0;
+                left: 0;
+                margin-left: 100px;
+                margin-top: 515px;
+                z-index: 2;
+                background: #beebff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+                h4 {
+                    width: 247px;
+                    height: 23px;
+                    font-family: "DM Sans";
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 30px;
+                    color: #191919;
+                    margin-top: 33px;
+                    margin-left: 24px;
+                }
+    
+                p {
+                    width: 327px;
+                    height: 47px;
+                    font-family: "Inter";
+                    font-style: italic;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    color: #191919;
+                    margin-top: 22px;
+                    margin-left: 24px;
+                }
+
+                .redtext {
+                    color: #F94D1C;
+                }
+            }
+        }
+
+        .consulting-credit {
+            width: 532px;
+            height: 589.3px;
+            margin-top: 121px;
+
+            @media (max-width:550px) {
+                margin-top: 40px;
+            }
+
+            @media (min-width: 1400px) {
+                margin-left: 199px;
+            }
+
+            .about-company-text {
+
+                #header {
+                    font-family: "Inter";
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    color: #F94D1C;
+                }
+
+                h2 {
+                    font-family: "DM Sans";
+                    font-size: 45px;
+                    font-weight: bold;
+                    line-height: 54px;
+
+                    @media (max-width:700px) {
+                        font-size: 35px;
+                    }
+                }
+
+                p {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 32px;
+                    color: rgba(25,25,25,0.7 );
+
+                    @media (max-width:700px) {
+                        line-height: 26px;
+                    }
+                }
+            }
+
+            .about-company-buttons {
+                display: flex;
+
+                .btn-black {
+                    width: 180px;
+                    height: 56px;
+
+                    @media (max-width: 332px) {
+                        display: none;
+                    }
+                }
+
+                .play-video {
+                    width: 48px;
+                    height: 48px;
+                    border-color: #191919;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                    text-decoration: none;
+                    color: #191919;
+                    margin-top: -1px;
+                    margin-left: 39px;
+
+                    &:hover {
+                        background-color: #f9d783;
+                        border: 1px solid #f9d783;
+                        color: #191919;
+                        transition: .3s ease-in-out;
+                    }
+
+                    @media (max-width: 336px) {
+                        display: none;
+                    }
+                }
+
+                .intro-video {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 16px;
+                    color: #191919;
+                    margin-left: 16px;
+                    margin-top: 15px;
+
+                    @media (max-width: 336px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .our-services {
     background-color: #F0EFE9;
     position: relative;

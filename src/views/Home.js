@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import MemberSection from '../components/MemberSection';
 import OurServices from '../components/OurServices';
 import Logos from '../components/Logos'
+import AboutCompany from '../components/AboutCompany';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
     <main>
      <Logos />
      <FeatureSection />
+     <AboutCompany />
      <OurServices />
      <MemberSection />
     </main>

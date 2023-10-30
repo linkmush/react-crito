@@ -319,6 +319,261 @@ html, body {
   padding-right: 50px;
 }
 
+.features .container {
+  display: flex;
+}
+@media (min-width: 600px) {
+  .features .container {
+    border-color: rgba(25, 25, 25, 0.2);
+    border-width: 1.2000000477px;
+    border-style: solid;
+    border-radius: 2px;
+    width: 1700px;
+    height: 700px;
+    margin-top: 80px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+.features .container .section-title-button p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #f94d1c;
+  margin-top: 161px;
+}
+@media (max-width: 700px) {
+  .features .container .section-title-button p {
+    margin-top: 30px;
+  }
+}
+.features .container .section-title-button h2 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 54px;
+  font-style: normal;
+  color: #191919;
+  margin-top: 17px;
+}
+@media (max-width: 700px) {
+  .features .container .section-title-button h2 {
+    font-size: 35px;
+  }
+}
+.features .container .section-title-button .btn-yellow {
+  width: 460px;
+  margin-top: 48px;
+}
+@media (max-width: 686px) {
+  .features .container .section-title-button .btn-yellow {
+    width: 238px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 1286px) {
+  .features .container .section-title-button {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.features .container .feature-advice {
+  display: none;
+}
+@media (min-width: 1234px) {
+  .features .container .feature-advice {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+.features .container .feature-advice .child-1 {
+  margin-top: 190px;
+  margin-left: 103px;
+}
+.features .container .feature-advice .child-2 {
+  margin-left: 103px;
+  margin-top: -80px;
+}
+.features .container .feature-advice article img {
+  width: 40px;
+  height: 40px;
+  border-width: 1px;
+  margin-bottom: 28px;
+}
+.features .container .feature-advice article h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.features .container .feature-advice article p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 25px;
+  font-style: normal;
+  color: rgba(25, 25, 25, 0.7);
+}
+
+.about-company .container {
+  display: flex;
+  position: relative;
+}
+.about-company .container .founder {
+  display: none;
+  position: relative;
+}
+@media (min-width: 1400px) {
+  .about-company .container .founder {
+    display: inline;
+  }
+}
+.about-company .container .founder .picture-woman {
+  width: 533px;
+  height: 615px;
+  z-index: 1;
+  margin-top: 122px;
+  margin-bottom: 120px;
+  margin-left: 156px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.about-company .container .founder .square-picture {
+  position: absolute;
+  width: 368px;
+  height: 180px;
+  top: 0;
+  left: 0;
+  margin-left: 100px;
+  margin-top: 515px;
+  z-index: 2;
+  background: #beebff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.about-company .container .founder .square-picture h4 {
+  width: 247px;
+  height: 23px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #191919;
+  margin-top: 33px;
+  margin-left: 24px;
+}
+.about-company .container .founder .square-picture p {
+  width: 327px;
+  height: 47px;
+  font-family: "Inter";
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #191919;
+  margin-top: 22px;
+  margin-left: 24px;
+}
+.about-company .container .founder .square-picture .redtext {
+  color: #F94D1C;
+}
+.about-company .container .consulting-credit {
+  width: 532px;
+  height: 589.3px;
+  margin-top: 121px;
+}
+@media (max-width: 550px) {
+  .about-company .container .consulting-credit {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .about-company .container .consulting-credit {
+    margin-left: 199px;
+  }
+}
+.about-company .container .consulting-credit .about-company-text #header {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #F94D1C;
+}
+.about-company .container .consulting-credit .about-company-text h2 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 54px;
+}
+@media (max-width: 700px) {
+  .about-company .container .consulting-credit .about-company-text h2 {
+    font-size: 35px;
+  }
+}
+.about-company .container .consulting-credit .about-company-text p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 32px;
+  color: rgba(25, 25, 25, 0.7);
+}
+@media (max-width: 700px) {
+  .about-company .container .consulting-credit .about-company-text p {
+    line-height: 26px;
+  }
+}
+.about-company .container .consulting-credit .about-company-buttons {
+  display: flex;
+}
+.about-company .container .consulting-credit .about-company-buttons .btn-black {
+  width: 180px;
+  height: 56px;
+}
+@media (max-width: 332px) {
+  .about-company .container .consulting-credit .about-company-buttons .btn-black {
+    display: none;
+  }
+}
+.about-company .container .consulting-credit .about-company-buttons .play-video {
+  width: 48px;
+  height: 48px;
+  border-color: #191919;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  color: #191919;
+  margin-top: -1px;
+  margin-left: 39px;
+}
+.about-company .container .consulting-credit .about-company-buttons .play-video:hover {
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  color: #191919;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 336px) {
+  .about-company .container .consulting-credit .about-company-buttons .play-video {
+    display: none;
+  }
+}
+.about-company .container .consulting-credit .about-company-buttons .intro-video {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #191919;
+  margin-left: 16px;
+  margin-top: 15px;
+}
+@media (max-width: 336px) {
+  .about-company .container .consulting-credit .about-company-buttons .intro-video {
+    display: none;
+  }
+}
+
 .our-services {
   background-color: #F0EFE9;
   position: relative;
