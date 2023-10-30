@@ -1,10 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-const SectionTitle = ({title, description}) => {
+const SectionTitle = ({ title, description, titleClassName, descriptionClassName }) => {
+  const descriptionLines = description.split('\n')
+
   return (
     <>
-       <p>{title}</p>
-       <h2>{description}</h2>
+      <p className={titleClassName}>{title}</p>
+      <h2 className={descriptionClassName}>
+        {descriptionLines.map((line, index) => (
+          <span key={index}>
+            {line}
+            {index < descriptionLines.length - 1 && <br />}
+          </span>
+        ))}
+      </h2>
     </>
   )
 }

@@ -9,8 +9,7 @@ const FeatureSection = () => {
     <section className="features">
     <div className="container">
         <div className="section-title-button">
-          <p>Features</p>
-          <h2>Our Accounting is<br/>trusted by thousand<br/>of companies</h2>
+          <SectionTitle title="Features" description={"Our Accounting is\ntrusted by thousand\nof companies"} />
           <Button type="yellow" text="Learn More" url="/services/consulting" />
         </div>
         <div className="feature-advice">

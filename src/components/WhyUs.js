@@ -2,6 +2,7 @@ import React from 'react'
 
 import WhyusBoxes from './WhyusBoxes'
 import twoladies from '../assets/images/amy-hirschi-K0c8ko3e6AA-unsplash.jpg'
+import SectionTitle from './Generics/SectionTitle'
 
 const WhyUs = () => {
   return (
@@ -9,8 +10,12 @@ const WhyUs = () => {
     <div className="backround-square"></div>
     <div className="container">
         <div className="header-tags">
-            <p className="header-tags-p">Why Choose Us</p>
-            <h2 className="header-tags-h2">Why We Are The<br/>Best Business<br/>Consulting Agency</h2>
+        <SectionTitle
+            title="Why Choose Us"
+            description={"Why We Are The\nBest Business\nConsulting Agency"}
+            titleClassName="header-tags-p"
+            descriptionClassName="header-tags-h2"
+          />
             <WhyusBoxes type="thumbs-up-outline" />
             <WhyusBoxes type="nuclear-outline" />
             <WhyusBoxes type="construct-outline" />

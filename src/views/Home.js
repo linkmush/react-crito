@@ -10,6 +10,7 @@ import OurServices from '../components/OurServices';
 import Logos from '../components/Logos'
 import AboutCompany from '../components/AboutCompany';
 import WhyUs from '../components/WhyUs';
+import ProjectSection from '../components/ProjectSection';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
      <AboutCompany />
      <OurServices />
      <WhyUs />
+     <ProjectSection />
      <MemberSection />
     </main>
     <Footer />
