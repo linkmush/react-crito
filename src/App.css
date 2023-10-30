@@ -574,6 +574,122 @@ html, body {
   }
 }
 
+.why-choose-us {
+  position: relative;
+  z-index: 0;
+}
+.why-choose-us .backround-square {
+  width: 1057px;
+  height: 425px;
+  background: #f0efe9;
+  z-index: -2;
+  position: absolute;
+  right: 0;
+  margin-top: 266px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1465px) {
+  .why-choose-us .backround-square {
+    display: none;
+  }
+}
+.why-choose-us .container {
+  display: flex;
+}
+@media (max-width: 1399px) {
+  .why-choose-us .container .header-tags {
+    text-align: center;
+  }
+}
+.why-choose-us .container .header-tags h2 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 18px;
+  margin-bottom: 48px;
+  white-space: nowrap;
+}
+@media (max-width: 380px) {
+  .why-choose-us .container .header-tags h2 {
+    font-size: 30px;
+  }
+}
+.why-choose-us .container .header-tags .header-tags-p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: left;
+  color: #f94d1c;
+  margin-top: 61px;
+}
+.why-choose-us .container .header-tags .article-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1399px) {
+  .why-choose-us .container .header-tags .article-list {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.why-choose-us .container .header-tags .article-list .article-content {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.why-choose-us .container .header-tags .article-list .article-icon {
+  width: 25px;
+  height: 26px;
+  border-color: rgba(25, 25, 25, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  transform: translateY(-12px);
+}
+.why-choose-us .container .header-tags .article-list .text-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+.why-choose-us .container .header-tags .article-list h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+}
+.why-choose-us .container .header-tags .article-list p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+}
+.why-choose-us .container .why-choose-us-img .two-women-img {
+  width: 645px;
+  height: 505px;
+  margin-left: 300px;
+  margin-top: 88px;
+  z-index: -1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1400px) {
+  .why-choose-us .container .why-choose-us-img .two-women-img {
+    display: none;
+  }
+}
+
 .our-services {
   background-color: #F0EFE9;
   position: relative;
