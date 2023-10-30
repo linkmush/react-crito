@@ -566,7 +566,7 @@ html, body {
   line-height: 16px;
   color: #191919;
   margin-left: 16px;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 @media (max-width: 336px) {
   .about-company .container .consulting-credit .about-company-buttons .intro-video {
