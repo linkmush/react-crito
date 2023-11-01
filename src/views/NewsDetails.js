@@ -1,12 +1,20 @@
 import React from 'react'
 
 import '../App.css';
-import NavSection from '../components/NavSection';
+import Header from '../components/Header';
+import NewsShowcase from '../components/NewsShowcase';
+import Footer from '../components/Footer';
+import FooterBottom from '../components/FooterBottom';
 
 const NewsDetails = () => {
   return (
   <>
-    <NavSection /> 
+    <Header />
+    <main>
+    <NewsShowcase />
+    </main>
+    <Footer />
+    <FooterBottom />
   </>
   )
 }

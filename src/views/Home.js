@@ -13,12 +13,14 @@ import WhyUs from '../components/WhyUs';
 import ProjectSection from '../components/ProjectSection';
 import ArticleNews from '../components/ArticleNews';
 import NewsLetter from '../components/NewsLetter';
+import ShowcaseSection from '../components/ShowcaseSection';
 
 const Home = () => {
   return (
   <>
     <Header />
     <main>
+     <ShowcaseSection /> 
      <Logos />
      <FeatureSection />
      <AboutCompany />
