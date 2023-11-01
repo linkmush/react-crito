@@ -1763,6 +1763,79 @@ html, body {
     }
 }
 
+.newsletter {
+    background-color: #F0EFE9;
+    position: relative;
+    padding-top: 104px;
+    padding-bottom: 106px;
+
+    .background-wavy-lines {
+        display: none;
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+
+        @media (min-width: 1650px) {
+            display: inline;
+        }
+        
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 424px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-family: "DM Sans";
+            font-size: 45px;
+            font-weight: bold;
+
+            @media (max-width: 326px) {
+                font-size: 30px;
+            }
+        }
+
+        form {
+            input {
+                color: #191919;
+                text-decoration: none;
+                padding: 12px 25px;
+                font-size: 16px;
+                border-radius: 25px;
+                outline: none;
+                border: 1px solid #DAD9D3;
+                margin-right: 20px;
+                width: 136px;
+
+                @media (min-width: 1400px) {
+                    color: #191919;
+                    text-decoration: none;
+                    padding: 12px 25px;
+                    font-size: 16px;
+                    border-radius: 25px;
+                    outline: none;
+                    border: 1px solid #DAD9D3;
+                    margin-right: 20px;
+                    width: 308px;
+                }
+            }
+
+            .btn-yellow {
+
+                @media (max-width: 974px) {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
 .footer {
     background-color: #0E1021;
     position: relative;
