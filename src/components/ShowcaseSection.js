@@ -8,16 +8,16 @@ import img_showcase from '../assets/images/showcase-image.svg'
 function ShowcaseSection() {
   return (
     <section className="showcase">
-    <img className="background-lines" src={img_backgroundlines} alt="Backround pictures of lines" />
-    <div className="container">
-        <div className="content">
-            <h1>We Provide The Best Business Solutions</h1>
-                <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
-                <Button type="yellow" text="Get Consulting" url="/services/get-consulting" />
-                <Button type="transparent" text="Learn More" url="/services/consulting" />
-        </div>
-        <img className="img" src={img_showcase} alt="image of a man" />
-    </div>
+      <img className="background-lines" src={img_backgroundlines} alt="Backround pictures of lines" />
+      <div className="container">
+          <div className="content">
+              <h1>We Provide The Best Business Solutions</h1>
+                  <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
+                  <Button type="yellow" text="Get Consulting" url="/services/get-consulting" />
+                  <Button type="transparent" text="Learn More" url="/services/consulting" />
+          </div>
+          <img className="img" src={img_showcase} alt="image of a man" />
+      </div>
     </section>  
   )
 }

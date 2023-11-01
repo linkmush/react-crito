@@ -11,6 +11,7 @@ import Logos from '../components/Logos'
 import AboutCompany from '../components/AboutCompany';
 import WhyUs from '../components/WhyUs';
 import ProjectSection from '../components/ProjectSection';
+import ArticleNews from '../components/ArticleNews';
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
      <WhyUs />
      <ProjectSection />
      <MemberSection />
+     <ArticleNews />
     </main>
     <Footer />
     <FooterBottom />

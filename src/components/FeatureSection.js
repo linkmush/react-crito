@@ -7,19 +7,19 @@ import FeatureBoxes from '../components/FeatureBoxes'
 const FeatureSection = () => {
   return (
     <section className="features">
-    <div className="container">
-        <div className="section-title-button">
-          <SectionTitle title="Features" description={"Our Accounting is\ntrusted by thousand\nof companies"} />
-          <Button type="yellow" text="Learn More" url="/services/consulting" />
+        <div className="container">
+            <div className="section-title-button">
+              <SectionTitle title="Features" description={"Our Accounting is\ntrusted by thousand\nof companies"} />
+              <Button type="yellow" text="Learn More" url="/services/consulting" />
+            </div>
+            <div className="feature-advice">
+              <FeatureBoxes featureType="business" />
+              <FeatureBoxes featureType="startup" />
+              <FeatureBoxes featureType="finance" />
+              <FeatureBoxes featureType="default" />
+            </div>
         </div>
-        <div className="feature-advice">
-          <FeatureBoxes featureType="business" />
-          <FeatureBoxes featureType="startup" />
-          <FeatureBoxes featureType="finance" />
-          <FeatureBoxes featureType="default" />
-        </div>
-    </div>
-</section>
+    </section>
   )
 }
 

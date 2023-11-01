@@ -889,6 +889,686 @@ html, body {
   text-align: center;
 }
 
+.Meet-our-team {
+  background-color: RGBA(240, 208, 130, 0.93);
+}
+.Meet-our-team .container {
+  display: flex;
+  flex-direction: column;
+}
+.Meet-our-team .container .header-members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Meet-our-team .container .header-members .header-members-text p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: left;
+  color: #f94d1c;
+  margin-top: 121px;
+}
+.Meet-our-team .container .header-members .header-members-text h2 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 18px;
+}
+@media (max-width: 800px) {
+  .Meet-our-team .container .header-members .header-members-text h2 {
+    font-size: 35px;
+  }
+}
+.Meet-our-team .container .header-members .btn-transparent {
+  width: 221px;
+  margin-top: 162px;
+}
+@media (max-width: 600px) {
+  .Meet-our-team .container .header-members .btn-transparent {
+    display: none;
+  }
+}
+.Meet-our-team .container .team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 98px;
+}
+@media (max-width: 1400px) {
+  .Meet-our-team .container .team-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .Meet-our-team .container .team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.Meet-our-team .container .team-members .team-member-1 img {
+  width: 308px;
+  height: 420px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 328px) {
+  .Meet-our-team .container .team-members .team-member-1 img {
+    width: 275px;
+  }
+}
+.Meet-our-team .container .team-members .team-member-1 h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 28px;
+}
+.Meet-our-team .container .team-members .team-member-1 p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+  margin-top: 8px;
+}
+.Meet-our-team .container .team-members .team-member-2 img {
+  width: 307px;
+  height: 420px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 328px) {
+  .Meet-our-team .container .team-members .team-member-2 img {
+    width: 275px;
+  }
+}
+.Meet-our-team .container .team-members .team-member-2 h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 28px;
+}
+.Meet-our-team .container .team-members .team-member-2 p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+  margin-top: 8px;
+}
+.Meet-our-team .container .team-members .team-member-3 img {
+  width: 308px;
+  height: 420px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 328px) {
+  .Meet-our-team .container .team-members .team-member-3 img {
+    width: 275px;
+  }
+}
+.Meet-our-team .container .team-members .team-member-3 h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 28px;
+}
+.Meet-our-team .container .team-members .team-member-3 p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+  margin-top: 8px;
+}
+.Meet-our-team .container .team-members .team-member-4 img {
+  width: 307px;
+  height: 420px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 328px) {
+  .Meet-our-team .container .team-members .team-member-4 img {
+    width: 275px;
+  }
+}
+.Meet-our-team .container .team-members .team-member-4 h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 28px;
+}
+.Meet-our-team .container .team-members .team-member-4 p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+  margin-top: 8px;
+}
+.Meet-our-team .container .dots-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 72px;
+}
+.Meet-our-team .container .dots-menu .dots-menu-li {
+  width: 12px;
+  height: 12px;
+  opacity: 0.2;
+}
+.Meet-our-team .container .dots-menu .dots-menu-2 {
+  width: 12px;
+  height: 12px;
+}
+.Meet-our-team .container .Testimonial-section {
+  background: #FFFFFF;
+  height: 887px;
+  margin-bottom: 120px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 769px) {
+  .Meet-our-team .container .Testimonial-section {
+    display: none;
+  }
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-header p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: center;
+  color: #f94d1c;
+  margin-top: 120px;
+}
+@media (max-width: 1200px) {
+  .Meet-our-team .container .Testimonial-section .Testimonial-header p {
+    margin-top: 30px;
+  }
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-header h2 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: center;
+  color: #191919;
+  margin-top: 18px;
+}
+@media (max-width: 1200px) {
+  .Meet-our-team .container .Testimonial-section .Testimonial-header h2 {
+    font-size: 35px;
+  }
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 88px;
+}
+@media (max-width: 1200px) {
+  .Meet-our-team .container .Testimonial-section .Testimonial-main {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-1 {
+  margin-right: 94px;
+}
+@media (max-width: 1199px) {
+  .Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-1 {
+    margin-left: 80px;
+  }
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-1 .fa-star {
+  color: #f94d1c;
+  width: 14.7px;
+  height: 14px;
+  margin-right: 7px;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-1 .buisness-manager {
+  display: flex;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-1 .buisness-manager .buisness-manager-1 {
+  width: 70px;
+  height: 70px;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-1 .buisness-manager .buisness-manager-text {
+  margin-left: 16px;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-1 .buisness-manager .buisness-manager-text h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  color: #191919;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-1 .buisness-manager .buisness-manager-text p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  color: #f94d1c;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-2 {
+  margin-right: 94px;
+}
+@media (max-width: 1199px) {
+  .Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-2 {
+    margin-left: 80px;
+  }
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-2 .fa-star {
+  color: #f94d1c;
+  width: 14.7px;
+  height: 14px;
+  margin-right: 7px;
+}
+@media (max-width: 1200px) {
+  .Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-2 .fa-star {
+    margin-top: 30px;
+  }
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-2 .senior-develepor {
+  display: flex;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-2 .senior-develepor .Senior-Developer-1 {
+  width: 70px;
+  height: 70px;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-2 .senior-develepor .senior-develepor-text {
+  margin-left: 16px;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-2 .senior-develepor .senior-develepor-text h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  color: #191919;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-2 .senior-develepor .senior-develepor-text p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  color: #f94d1c;
+}
+@media (max-width: 1200px) {
+  .Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-3 {
+    display: none;
+  }
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-3 .fa-star {
+  color: #f94d1c;
+  width: 14.7px;
+  height: 14px;
+  margin-right: 7px;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-3 .key-account-manager {
+  display: flex;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-3 .key-account-manager .key-account-manager-1 {
+  width: 70px;
+  height: 70px;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-3 .key-account-manager .key-account-manager-text {
+  margin-left: 16px;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-3 .key-account-manager .key-account-manager-text h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  color: #191919;
+}
+.Meet-our-team .container .Testimonial-section .Testimonial-main .Testimonial-main-3 .key-account-manager .key-account-manager-text p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  color: #f94d1c;
+}
+.Meet-our-team .container .center-btn-black {
+  display: flex;
+  justify-content: center;
+}
+.Meet-our-team .container .center-btn-black .btn-black {
+  margin-top: 96px;
+}
+@media (max-width: 380px) {
+  .Meet-our-team .container .center-btn-black .btn-black {
+    margin-top: 15px;
+  }
+}
+
+.Article-News .container {
+  display: flex;
+  flex-direction: column;
+}
+.Article-News .container .article-news-header {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 544px) {
+  .Article-News .container .article-news-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.Article-News .container .article-news-header .article-news-header-text p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  font-style: normal;
+  text-align: left;
+  color: #f94d1c;
+  margin-top: 120px;
+}
+@media (max-width: 900px) {
+  .Article-News .container .article-news-header .article-news-header-text p {
+    margin-top: 50px;
+  }
+}
+.Article-News .container .article-news-header .article-news-header-text h2 {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-bottom: 35px;
+}
+@media (max-width: 900px) {
+  .Article-News .container .article-news-header .article-news-header-text h2 {
+    font-size: 30px;
+  }
+}
+.Article-News .container .article-news-header .btn-transparent {
+  margin-top: 161px;
+  width: 221px;
+  height: 52px;
+}
+@media (max-width: 544px) {
+  .Article-News .container .article-news-header .btn-transparent {
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+}
+.Article-News .container .articles-main {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1400px) {
+  .Article-News .container .articles-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 421px) {
+  .Article-News .container .articles-main {
+    display: none;
+  }
+}
+.Article-News .container .articles-main .digitalization .image-women-main {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.Article-News .container .articles-main .digitalization .image-women-main .image-main-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 56px;
+  height: 64px;
+  background: #f9d783;
+  top: 16px;
+  left: 16px;
+}
+.Article-News .container .articles-main .digitalization .image-women-main .image-main-square .image-main-square-numbers {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: center;
+  color: #191919;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Article-News .container .articles-main .digitalization .image-women-main .image-main-square .image-main-square-text {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: center;
+  color: rgba(25, 25, 25, 0.7);
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Article-News .container .articles-main .digitalization #header {
+  margin-top: 28px;
+}
+.Article-News .container .articles-main .digitalization p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+}
+.Article-News .container .articles-main .digitalization h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+.Article-News .container .articles-main .Implement .image-text {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.Article-News .container .articles-main .Implement .image-text .image-main-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 56px;
+  height: 64px;
+  background: #f9d783;
+  top: 16px;
+  left: 16px;
+}
+.Article-News .container .articles-main .Implement .image-text .image-main-square .image-main-square-numbers {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: center;
+  color: #191919;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Article-News .container .articles-main .Implement .image-text .image-main-square .image-main-square-text {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: center;
+  color: rgba(25, 25, 25, 0.7);
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Article-News .container .articles-main .Implement #header {
+  margin-top: 28px;
+}
+.Article-News .container .articles-main .Implement p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+}
+.Article-News .container .articles-main .Implement h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+.Article-News .container .articles-main .Support-Modern .image-book {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.Article-News .container .articles-main .Support-Modern .image-book .image-main-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 56px;
+  height: 64px;
+  background: #f9d783;
+  top: 16px;
+  left: 16px;
+}
+.Article-News .container .articles-main .Support-Modern .image-book .image-main-square .image-main-square-numbers {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: center;
+  color: #191919;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Article-News .container .articles-main .Support-Modern .image-book .image-main-square .image-main-square-text {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: center;
+  color: rgba(25, 25, 25, 0.7);
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Article-News .container .articles-main .Support-Modern #header {
+  margin-top: 28px;
+}
+.Article-News .container .articles-main .Support-Modern p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+}
+.Article-News .container .articles-main .Support-Modern h3 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  font-style: normal;
+  text-align: left;
+  color: #191919;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+.Article-News .container .dots-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 66px;
+  margin-bottom: 90px;
+}
+@media (max-width: 420px) {
+  .Article-News .container .dots-menu {
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+}
+.Article-News .container .dots-menu .dots-menu-li {
+  width: 12px;
+  height: 12px;
+  opacity: 0.2;
+}
+.Article-News .container .dots-menu .dots-menu-2 {
+  width: 12px;
+  height: 12px;
+}
+
 .footer {
   background-color: #0E1021;
   position: relative;
