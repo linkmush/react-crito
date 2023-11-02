@@ -27,39 +27,39 @@ const ArticleMain = () => {
                 <ArticleBoxes selectedArticle="New-Products" />
                 <ArticleBoxes selectedArticle="Better-Result" />
             </div>
-                <div class="menu">
-                <div class="menu-item">
-                    <span class="box">
+                <div className="menu">
+                <div className="menu-item">
+                    <span className="box">
                     &lt;
                     </span>
                 </div>
-                <div class="menu-item">
-                    <span class="box black-box">
+                <div className="menu-item">
+                    <span className="box black-box">
                     1
                     </span>
                 </div>
-                <div class="menu-item">
-                    <span class="box">
+                <div className="menu-item">
+                    <span className="box">
                     2
                     </span>
                 </div>
-                <div class="menu-item">
-                    <span class="box">
+                <div className="menu-item">
+                    <span className="box">
                     3
                     </span>
                 </div>
-                <div class="menu-item">
-                    <span class="dots-menu-item">
+                <div className="menu-item">
+                    <span className="dots-menu-item">
                     ...
                     </span>
                 </div>
-                <div class="menu-item">
-                    <span class="box">
+                <div className="menu-item">
+                    <span className="box">
                     9
                     </span>
                 </div>
-                <div class="menu-item">
-                    <span class="box">
+                <div className="menu-item">
+                    <span className="box">
                     &gt;
                     </span>
                 </div>

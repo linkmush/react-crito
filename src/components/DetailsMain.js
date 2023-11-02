@@ -5,6 +5,8 @@ import women from '../assets/images/detailswomen.png'
 import shape from '../assets/images/Shape.png'
 import GreyButton from './Generics/GreyButton'
 import DetailsText from './DetailsText'
+import DetailsCategories from './DetailsCategories'
+import DetailSquare from './DetailSquare'
 
 const DetailsMain = () => {
   return (
@@ -37,8 +39,17 @@ const DetailsMain = () => {
                 </div>
                 <div className="details-wrapper-2">
                     <form>
-                        <input type="text" placeholder="Type to search..." />
+                        <div className="details-search">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <input type="text" placeholder="Type to search..." />
+                        </div>
                     </form>
+                    <div className="detail-box">
+                        <DetailSquare />
+                    </div>
+                    <div className="details-categories">
+                        <DetailsCategories />
+                    </div>
                 </div>
             </div>
         </div>
