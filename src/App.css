@@ -2575,11 +2575,99 @@ html, body {
   }
 }
 
-.details-main .continer {
+.details-main .container .container-wrapper {
   display: flex;
 }
-.details-main .continer .details-wrapper {
+.details-main .container .container-wrapper .details-wrapper .details-header {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+  font-style: normal;
+  color: #191919;
+  margin-top: 123px;
+}
+.details-main .container .container-wrapper .details-wrapper .details-description {
+  display: flex;
   flex-direction: row;
+  margin-top: 35px;
+}
+.details-main .container .container-wrapper .details-wrapper .details-description p {
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  font-style: normal;
+  text-align: center;
+  color: #191919;
+}
+.details-main .container .container-wrapper .details-wrapper .details-description .dots-menu {
+  width: 10px;
+  height: 10px;
+  background: #f9d783;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 50%;
+}
+.details-main .container .container-wrapper .details-wrapper .details-img {
+  width: 758px;
+  height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 72px;
+}
+.details-main .container .container-wrapper .details-wrapper .details-text-1 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+  margin-top: 47px;
+}
+.details-main .container .container-wrapper .details-wrapper .details-text-2 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+}
+.details-main .container .container-wrapper .details-wrapper .bold-text-wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+.details-main .container .container-wrapper .details-wrapper .bold-text-wrapper .bold-text-img img {
+  width: 28px;
+  height: 20px;
+}
+.details-main .container .container-wrapper .details-wrapper .bold-text-wrapper .bold-text-p {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36px;
+  font-style: italic;
+  text-align: left;
+  color: #191919;
+  margin-left: 20px;
+}
+.details-main .container .container-wrapper .details-wrapper .details-text-3 .details-p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(25, 25, 25, 0.7);
+  margin-top: 30px;
+}
+.details-main .container .container-wrapper .details-wrapper .details-buttons {
+  margin-top: 42px;
+  margin-bottom: 64px;
+}
+.details-main .container .container-wrapper .details-wrapper .details-buttons .btn-grey {
+  margin-right: 12px;
 }
 
 .footer {

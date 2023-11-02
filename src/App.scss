@@ -2882,12 +2882,124 @@ html, body {
 }
 
 .details-main {
-    
-    .continer {
-        display: flex;
 
-        .details-wrapper {
-            flex-direction: row;
+    .container {
+
+        .container-wrapper {
+                
+            display: flex;
+                    
+            .details-wrapper {
+                        
+                .details-header {
+                    font-family: "DM Sans";
+                    font-size: 45px;
+                    font-weight: bold;
+                    line-height: 55px;
+                    font-style: normal;
+                    color: #191919;
+                    margin-top: 123px;
+                }
+                .details-description {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 35px;
+                    
+                    p {
+                    font-family: "DM Sans";
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    font-style: normal;
+                    text-align: center;
+                    color: #191919;
+                    }
+
+                    .dots-menu {
+                        width: 10px;
+                        height: 10px;
+                        background: #f9d783;
+                        display: inline-block;
+                        margin: 10px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .details-img {
+                    width: 758px;
+                    height: 500px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                    margin-top: 72px;
+                }
+
+                .details-text-1 {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 28px;
+                    font-style: normal;
+                    text-align: left;
+                    color: rgba(25,25,25,0.7 );
+                    margin-top: 47px;
+                }
+
+                .details-text-2 {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 28px;
+                    font-style: normal;
+                    text-align: left;
+                    color: rgba(25,25,25,0.7 );
+                }
+
+                .bold-text-wrapper {
+                    display: flex;
+                    margin-top: 30px;
+
+                    .bold-text-img {
+
+                        img {
+                            width: 28px;
+                            height: 20px;
+                        }
+                    }
+
+                    .bold-text-p {
+                        font-family: "DM Sans";
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 36px;
+                        font-style: italic;
+                        text-align: left;
+                        color: #191919;
+                        margin-left: 20px;
+                    }
+                }
+
+                .details-text-3 {
+
+                    .details-p {
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-weight: normal;
+                        line-height: 28px;
+                        font-style: normal;
+                        text-align: left;
+                        color: rgba(25,25,25,0.7 );
+                        margin-top: 30px;
+                    }
+                }
+
+                .details-buttons {
+                    margin-top: 42px;
+                    margin-bottom: 64px;
+
+                    .btn-grey {
+                        margin-right: 12px;
+                    }
+                }
+            }
         }
     }
 }
