@@ -641,6 +641,17 @@ html, body {
     margin: 0 280px;
   }
 }
+.message-form .container .submission-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+.message-form .container .submission-message button.btn-yellow {
+  width: 100%;
+  margin-top: 50px;
+}
 .message-form .container form .form-input {
   display: block;
   width: 100%;
