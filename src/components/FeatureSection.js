@@ -2,7 +2,7 @@ import React from 'react'
 
 import Button from './Generics/Button'
 import SectionTitle from './Generics/SectionTitle'
-import FeatureBoxes from '../components/FeatureBoxes'
+import FeaturesBoxes from './FeaturesBoxes'
 
 const FeatureSection = () => {
   return (
@@ -13,10 +13,10 @@ const FeatureSection = () => {
               <Button type="yellow" text="Learn More" url="/services/consulting" />
             </div>
             <div className="feature-advice">
-              <FeatureBoxes featureType="business" />
-              <FeatureBoxes featureType="startup" />
-              <FeatureBoxes featureType="finance" />
-              <FeatureBoxes featureType="default" />
+              <FeaturesBoxes id={1} />
+              <FeaturesBoxes id={2} />
+              <FeaturesBoxes id={3} />
+              <FeaturesBoxes id={4} />
             </div>
         </div>
     </section>
