@@ -12,10 +12,10 @@ const ProjectSection = () => {
             <SectionTitle title="Project & Case Studies" description="Let’s Looks Our Global Projects" />
             </div>
             <div className="project-and-cases">
-            <ProjectBoxes projectType="business" />
-            <ProjectBoxes projectType="responsive" />
-            <ProjectBoxes projectType="employees" />
-            <ProjectBoxes projectType="/" />
+            <ProjectBoxes id={1} />
+            <ProjectBoxes id={2} />
+            <ProjectBoxes id={3} />
+            <ProjectBoxes id={4} />
             </div>
             <div className="center-content">
                 <Button type="black" text="All Recent Projects" url="/services/consulting" />

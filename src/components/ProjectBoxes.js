@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom'
 import newspaper from '../assets/images/Image.png'
@@ -6,47 +6,28 @@ import watch from '../assets/images/Image (3).png'
 import pen from '../assets/images/Image (1).png'
 import notebook from '../assets/images/Image (2).png'
 
-const ProjectBoxes = ({ projectType }) => {
-  const renderProject = () => {
-    switch (projectType) {
-      case 'business':
-        return (
-          <article>
-            <img src={newspaper} alt="man reading newspaper" />
-            <h3>Grow your business</h3>
-            <Link to="/services">Read More <ion-icon id="arrow" name="arrow-forward-outline"></ion-icon></Link>
-          </article>
-        )
-      case 'responsive':
-        return (
-          <article>
-            <img src={watch} alt="apple watch" />
-            <h3>Why your client needs a responsive website</h3>
-            <Link to="/services">Read More <ion-icon id="arrow" name="arrow-forward-outline"></ion-icon></Link>
-          </article>
-        )
-      case 'employees':
-        return (
-          <article>
-            <img src={pen} alt="pen and paper" />
-            <h3>Educate your employees to get better results</h3>
-            <Link to="/services">Read More <ion-icon id="arrow" name="arrow-forward-outline"></ion-icon></Link>
-          </article>
-        )
-      default:
-        return (
-            <article>
-              <img src={notebook} alt="notebook" />
-              <h3>Business Insights is an important piece of your business</h3>
-              <Link to="/services">Read More <ion-icon id="arrow" name="arrow-forward-outline"></ion-icon></Link>
-            </article>
-          )
-    }
-  }
+const ProjectBoxes = ({ id }) => {
+  const [projects] = useState ([
+    { id: 1, title: "Grow your business", imgSrc: newspaper },
+    { id: 2, title: "Why your client needs a responsive website", imgSrc: watch },
+    { id: 3, title: "Educate your employees to get better results", imgSrc: pen },
+    { id: 4, title: "Business Insights is an important piece of your business", imgSrc: notebook },
+
+  ])
 
   return (
-    <div className="project-boxes">
-      {renderProject()}
+    <div>
+        {projects.map(article => (
+            <div key={article.id}>
+                {article.id === id ? (
+                    <article className={article}>
+                      <img src={article.imgSrc} alt={article.title} />
+                      <h3>{article.title}</h3>
+                      <Link to={`/services/${article.id}`}>Read More <ion-icon id="arrow" name="arrow-forward-outline"></ion-icon></Link>
+                    </article>
+                ) : null}
+            </div>
+        ))}
     </div>
   )
 }

@@ -18,10 +18,10 @@ const MemberSection = () => {
                   <Button type="transparent" text="Browse Services" url="/services/consulting" />
             </div>
             <div className="team-members">
-              <MemberImg memberNumber={1} />
-              <MemberImg memberNumber={2} />
-              <MemberImg memberNumber={3} />
-              <MemberImg memberNumber={4} />
+              <MemberImg id={1} />
+              <MemberImg id={2} />
+              <MemberImg id={3} />
+              <MemberImg id={4} />
             </div>
             <ul className="dots-menu">
                 <li className="dots-menu-li"><Link to="/"></Link></li>

@@ -1,55 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react'
 
 import officer from '../assets/images/member-1 (1).png'
 import consultant from '../assets/images/member-1 (2).png'
 import kimberly from '../assets/images/member-1 (3).png'
 import justin from '../assets/images/member-1 (4).png'
 
-const MemberImg = ({ memberNumber }) => {
-  let memberInfo;
+const MemberImg = ({ id }) => {
+  const [memberImg] = useState ([
+    { id: 1, title: "Kristine Palmer", description: "Chef Operation Office", imgSrc: officer },
+    { id: 2, title: "Mark Aubri", description: "Senior Consultant", imgSrc: consultant },
+    { id: 3, title: "Kristine Palmer", description: "Senior Consultant", imgSrc: kimberly },
+    { id: 4, title: "Kristine Palmer", description: "Senior Tech Consultant", imgSrc: justin },
+  ])
 
-  switch (memberNumber) {
-    case 1:
-      memberInfo = {
-        imgSrc: officer,
-        name: 'Kristine Palmer',
-        role: 'Chef Operation Officer',
-      }
-      break;
-    case 2:
-      memberInfo = {
-        imgSrc: consultant,
-        name: 'Mark Aubri',
-        role: 'Senior Consultant',
-      }
-      break;
-    case 3:
-      memberInfo = {
-        imgSrc: kimberly,
-        name: 'Kimberly Hansen',
-        role: 'Senior Consultant',
-      }
-      break;
-    case 4:
-      memberInfo = {
-        imgSrc: justin,
-        name: 'Justin Willoman',
-        role: 'Senior Tech Consultant',
-      }
-      break;
-    default:
-      memberInfo = {
-        imgSrc: officer,
-        name: 'Kristine Palmer',
-        role: 'Chef Operation Officer',
-      }
-  }
+  const className = `team-member-${id}`;
 
   return (
-    <div className={`team-member-${memberNumber}`}>
-      <img src={memberInfo.imgSrc} alt={`image of ${memberInfo.name}`} />
-      <h3>{memberInfo.name}</h3>
-      <p>{memberInfo.role}</p>
+    <div className={className}>
+        {memberImg.map(article => (
+            <div key={article.id}>
+                {article.id === id ? (
+                    <article className={article}>
+                      <img src={article.imgSrc} alt={article.title} />
+                      <h3>{article.title}</h3>
+                      <p>{article.description}</p>
+                    </article>
+                ) : null}
+            </div>
+        ))}
     </div>
   )
 }
