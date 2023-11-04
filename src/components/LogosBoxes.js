@@ -7,7 +7,7 @@ import square from '../assets/images/square.svg'
 import gobona from '../assets/images/gobona.svg'
 
 const LogosBoxes = ({ image }) => {
-    const [selectedImage, setSelectedImage] = useState(paperz);
+    const [selectedImage, setSelectedImage] = useState()
 
     useEffect(() => {
         //console.log('useEffect körs');
