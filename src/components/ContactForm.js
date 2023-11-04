@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -7,57 +7,57 @@ const ContactForm = () => {
     message: '',
   })
 
-  const [nameError, setNameError] = useState('');
-  const [submissionMessage, setSubmissionMessage] = useState('');
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [nameError, setNameError] = useState('')
+  const [submissionMessage, setSubmissionMessage] = useState('')
+  const [formSubmitted, setFormSubmitted] = useState(false)
 
   const isEmailValid = (email) => {
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
     return emailRegex.test(email);
   }
 
   const isNameValid = (name) => {
-    const nameRegex = /^[A-Za-z]+$/;
+    const nameRegex = /^[A-Za-z]+$/
     if (!nameRegex.test(name)) {
       setNameError('The name can only contain letters');
-      return false;
+      return false
     } else {
-      setNameError('');
-      return true;
+      setNameError('')
+      return true
     }
   }
 
   const handleNameChange = (e) => {
-    setFormData({ ...formData, name: e.target.value });
+    setFormData({ ...formData, name: e.target.value })
   }
 
   const handleEmailChange = (e) => {
-    setFormData({ ...formData, email: e.target.value });
+    setFormData({ ...formData, email: e.target.value })
   }
 
   const handleMessageChange = (e) => {
-    setFormData({ ...formData, message: e.target.value });
+    setFormData({ ...formData, message: e.target.value })
   }
 
   const handleReturnToForm = () => {
-    setFormSubmitted(false);
+    setFormSubmitted(false)
     setFormData({
       name: '',
       email: '',
       message: '',
     })
-    setSubmissionMessage('');
+    setSubmissionMessage('')
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log('Submit button clicked');
+    console.log('Submit button clicked')
 
     if (!isNameValid(formData.name) || !isEmailValid(formData.email)) {
       setSubmissionMessage('Invalid form data, please try again.')
-      setFormSubmitted(true);
-      return;
+      setFormSubmitted(true)
+      return
     }
 
     try {
@@ -69,22 +69,22 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
-      console.log('HTTP Status:', response.status);
+      console.log('HTTP Status:', response.status)
 
       if (response.status === 200) {
-        const successMessage = 'Message sent successfully';
+        const successMessage = 'Message sent successfully'
         setSubmissionMessage(successMessage);
         setFormSubmitted(true);
       } else if (response.status === 400) {
-        const errorMessage = 'Invalid form data, please try again.';
+        const errorMessage = 'Invalid form data, please try again.'
         setSubmissionMessage(errorMessage);
         setFormSubmitted(true);
       }
     } catch (error) {
-      const errorMessage = 'An error occurred, please try again later.';
-      setSubmissionMessage(errorMessage);
-      setFormSubmitted(true);
-      console.error(errorMessage);
+      const errorMessage = 'An error occurred, please try again later.'
+      setSubmissionMessage(errorMessage)
+      setFormSubmitted(true)
+      console.error(errorMessage)
     }
   }
   return (
