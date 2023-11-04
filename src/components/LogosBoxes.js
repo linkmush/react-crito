@@ -32,7 +32,7 @@ const LogosBoxes = ({ image }) => {
                 break;
         }
         //console.log('useEffect rendera bilder:', image);
-    }, [image])
+    }, [])
 
     return (
         <img src={selectedImage} alt={`logo-${image}`} />
