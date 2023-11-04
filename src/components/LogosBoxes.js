@@ -1,41 +1,42 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
-import paperz from '../assets/images/paperz.svg'
-import dorfus from '../assets/images/dorfus.svg'
-import martino from '../assets/images/martino.svg'
-import square from '../assets/images/square.svg'
-import gobona from '../assets/images/gobona.svg'
+import paperz from '../assets/images/paperz.svg';
+import dorfus from '../assets/images/dorfus.svg';
+import martino from '../assets/images/martino.svg';
+import square from '../assets/images/square.svg';
+import gobona from '../assets/images/gobona.svg';
 
 const LogosBoxes = ({ image }) => {
+    const [selectedImage, setSelectedImage] = useState(paperz);
 
-    let selectImg;
+    useEffect(() => {
+        //console.log('useEffect körs');
+        switch (image) {
+            case 'paperz':
+                setSelectedImage(paperz);
+                break;
+            case 'dorfus':
+                setSelectedImage(dorfus);
+                break;
+            case 'martino':
+                setSelectedImage(martino);
+                break;
+            case 'square':
+                setSelectedImage(square);
+                break;
+            case 'gobona':
+                setSelectedImage(gobona);
+                break;
+            default:
+                setSelectedImage(paperz);
+                break;
+        }
+        //console.log('useEffect rendera bilder:', image);
+    }, [image]);
 
-    switch (image) {
-      case 'paperz':
-        selectImg = paperz;
-        break;
-      case 'dorfus':
-        selectImg = dorfus;
-        break;
-      case 'martino':
-        selectImg = martino;
-        break;
-      case 'square':
-        selectImg = square;
-        break;
-      case 'gobona':
-        selectImg = gobona;
-        break;
-      default:
-        selectImg = paperz;
-        break;
-    }
-    
-  return (
-    <>
-        <img src={selectImg} alt={`logo-${image}`} />
-    </>
-  )
+    return (
+        <img src={selectedImage} alt={`logo-${image}`} />
+    );
 }
 
-export default LogosBoxes
+export default LogosBoxes;
