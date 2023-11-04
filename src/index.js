@@ -8,12 +8,14 @@ import Contact from './views/Contact';
 import News from './views/News';
 import NewsDetails from './views/NewsDetails';
 import NotFound from './views/NotFound';
+import AutoScrollTop from './components/Generics/AutoScrollTop'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div className="wrapper">
     <BrowserRouter>
+    <AutoScrollTop />
       <Routes>
         <Route path='/' element={<Home /> } />
         <Route path='/news' element={<News /> } />
