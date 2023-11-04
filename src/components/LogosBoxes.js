@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
-import paperz from '../assets/images/paperz.svg';
-import dorfus from '../assets/images/dorfus.svg';
-import martino from '../assets/images/martino.svg';
-import square from '../assets/images/square.svg';
-import gobona from '../assets/images/gobona.svg';
+import paperz from '../assets/images/paperz.svg'
+import dorfus from '../assets/images/dorfus.svg'
+import martino from '../assets/images/martino.svg'
+import square from '../assets/images/square.svg'
+import gobona from '../assets/images/gobona.svg'
 
 const LogosBoxes = ({ image }) => {
     const [selectedImage, setSelectedImage] = useState(paperz);
@@ -32,11 +32,11 @@ const LogosBoxes = ({ image }) => {
                 break;
         }
         //console.log('useEffect rendera bilder:', image);
-    }, [image]);
+    }, [image])
 
     return (
         <img src={selectedImage} alt={`logo-${image}`} />
-    );
+    )
 }
 
-export default LogosBoxes;
+export default LogosBoxes

@@ -1,33 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const articles = [
-  {
-    type: 'thumbs-up-outline',
-    title: 'Process Excellence',
-    description: 'Lorem, ipsum dolor sit amet consectetur.',
-  },
-  {
-    type: 'nuclear-outline',
-    title: 'Strategic Planning',
-    description: 'Lorem, ipsum dolor sit amet consectetur.',
-  },
-  {
-    type: 'construct-outline',
-    title: 'Experience Design',
-    description: 'Lorem, ipsum dolor sit amet consectetur.',
-  },
-  {
-    type: 'person-add-outline',
-    title: 'Artificial Intelligence',
-    description: 'Lorem, ipsum dolor sit amet consectetur.',
-  },
-]
+const WhyusBoxes = ({ id }) => {
+  const [articles] = useState([
+    {
+      id: 1,
+      title: 'Process Excellence',
+      description: 'Lorem, ipsum dolor sit amet consectetur.',
+      type: 'thumbs-up-outline',
+    },
+    {
+      id: 2,
+      title: 'Strategic Planning',
+      description: 'Lorem, ipsum dolor sit amet consectetur.',
+      type: 'nuclear-outline',
+    },
+    {
+      id: 3,
+      title: 'Experience Design',
+      description: 'Lorem, ipsum dolor sit amet consectetur.',
+      type: 'construct-outline',
+    },
+    {
+      id: 4,
+      title: 'Artificial Intelligence',
+      description: 'Lorem, ipsum dolor sit amet consectetur.',
+      type: 'person-add-outline',
+    },
+  ])
 
-const WhyusBoxes = ({ type }) => {
-  const selectedArticle = articles.find((article) => article.type === type);
+  const selectedArticle = articles.find((article) => article.id === id);
 
   if (!selectedArticle) {
-    return <div>No matching article found.</div>
+    return null
   }
 
   return (
@@ -43,4 +47,4 @@ const WhyusBoxes = ({ type }) => {
   )
 }
 
-export default WhyusBoxes;
+export default WhyusBoxes

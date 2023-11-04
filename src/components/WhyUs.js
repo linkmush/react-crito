@@ -16,10 +16,10 @@ const WhyUs = () => {
               titleClassName="header-tags-p"
               descriptionClassName="header-tags-h2"
             />
-              <WhyusBoxes type="thumbs-up-outline" />
-              <WhyusBoxes type="nuclear-outline" />
-              <WhyusBoxes type="construct-outline" />
-              <WhyusBoxes type="person-add-outline" />
+              <WhyusBoxes id={1} />
+              <WhyusBoxes id={2} />
+              <WhyusBoxes id={3} />
+              <WhyusBoxes id={4} />
           </div>
           <div>
               <div className="why-choose-us-img">
