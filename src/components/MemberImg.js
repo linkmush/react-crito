@@ -13,18 +13,16 @@ const MemberImg = ({ id }) => {
     { id: 4, title: "Kristine Palmer", description: "Senior Tech Consultant", imgSrc: justin },
   ])
 
-  const className = `team-member-${id}`;
-
   return (
-    <div className={className}>
+    <div className={`team-member-${id}`}>
         {memberImg.map(article => (
             <div key={article.id}>
                 {article.id === id ? (
-                    <article className={article}>
+                    <div className={`article team-member-${article.id}`}>
                       <img src={article.imgSrc} alt={article.title} />
                       <h3>{article.title}</h3>
                       <p>{article.description}</p>
-                    </article>
+                    </div>
                 ) : null}
             </div>
         ))}
