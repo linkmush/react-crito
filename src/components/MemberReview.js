@@ -28,7 +28,7 @@ const MemberReview = ({ section }) => {
               </div>
           </div>
         </div>
-      );
+      )
     } else if (section === 2) {
       setTestimonialSection(
           <div className="Testimonial-main-2">
@@ -46,7 +46,7 @@ const MemberReview = ({ section }) => {
                   </div>
               </div>
           </div>
-      );
+      )
     } else if (section === 3) {
       setTestimonialSection(
           <div className="Testimonial-main-3">

@@ -13,19 +13,19 @@ const ArticleMain = () => {
                 </div>
                 </div>
             <div className="articles-main-second">
-                <ArticleBoxes selectedArticle="digitalization" />
-                <ArticleBoxes selectedArticle="Implement" />
-                <ArticleBoxes selectedArticle="Support-Modern" />
+                <ArticleBoxes id={1} />
+                <ArticleBoxes id={2} />
+                <ArticleBoxes id={3} />
             </div>
             <div className="articles-main-second">
-                <ArticleBoxes selectedArticle="To-Implement" />
-                <ArticleBoxes selectedArticle="End-Users" />
-                <ArticleBoxes selectedArticle="Head-Office" />
+                <ArticleBoxes id={4} />
+                <ArticleBoxes id={5} />
+                <ArticleBoxes id={6} />
             </div>
             <div className="articles-main-second">
-                <ArticleBoxes selectedArticle="Business-Intelligence" />
-                <ArticleBoxes selectedArticle="New-Products" />
-                <ArticleBoxes selectedArticle="Better-Result" />
+                <ArticleBoxes id={7} />
+                <ArticleBoxes id={8} />
+                <ArticleBoxes id={9} />
             </div>
                 <div className="menu">
                 <div className="menu-item">

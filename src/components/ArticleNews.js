@@ -16,9 +16,9 @@ const ArticleNews = () => {
                     <Button type="transparent" text="Browse Articles" url="/services/consulting" />
                 </div>
             <div className="articles-main">
-                <ArticleBoxes selectedArticle="digitalization" />
-                <ArticleBoxes selectedArticle="Implement" />
-                <ArticleBoxes selectedArticle="Support-Modern" />
+                <ArticleBoxes id={1} />
+                <ArticleBoxes id={2} />
+                <ArticleBoxes id={3} />
             </div>
             <ul className="dots-menu">
                 <li className="dots-menu-2"><Link to="/"></Link></li>
