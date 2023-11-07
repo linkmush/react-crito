@@ -2,6 +2,7 @@ import React from 'react'
 
 import ArticleBoxes from './ArticleBoxes'
 import SectionTitle from './Generics/SectionTitle'
+import ArticleList from './ArticleList'
 
 const ArticleMain = () => {
   return (
@@ -12,21 +13,9 @@ const ArticleMain = () => {
                     <SectionTitle description="Our News & Articles" />
                 </div>
                 </div>
-            <div className="articles-main-second">
-                <ArticleBoxes id={1} />
-                <ArticleBoxes id={2} />
-                <ArticleBoxes id={3} />
-            </div>
-            <div className="articles-main-second">
-                <ArticleBoxes id={4} />
-                <ArticleBoxes id={5} />
-                <ArticleBoxes id={6} />
-            </div>
-            <div className="articles-main-second">
-                <ArticleBoxes id={7} />
-                <ArticleBoxes id={8} />
-                <ArticleBoxes id={9} />
-            </div>
+                    <div className="articles-main-second">
+                    <ArticleList />
+                    </div>
                 <div className="menu">
                 <div className="menu-item">
                     <span className="box">

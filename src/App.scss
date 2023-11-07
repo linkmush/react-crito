@@ -2187,7 +2187,6 @@ html, body {
             }
 
             .article-news-header-text-second {
-
                 p {
                     font-family: "Inter";
                     font-size: 18px;
@@ -2202,7 +2201,7 @@ html, body {
                         margin-top: 50px;
                     }
                 }
-    
+
                 h2 {
                     font-family: "DM Sans";
                     font-size: 45px;
@@ -2221,242 +2220,78 @@ html, body {
         }
 
         .articles-main-second {
-            display: flex;
-            justify-content: space-between;
 
-            @media (max-width: 1400px) {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+            .article-image {
+                position: relative;
+                width: 420px;
+                height: 230px;
 
-            @media (max-width: 421px) {
-                display: none;
-            }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
 
-            .digitalization {
+                .orange-box {
+                    position: absolute;
+                    width: 56px;
+                    height: 64px;
+                    background: #f9d783;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    top: 10px;
+                    left: 10px;
 
-                .image-women-main {
-                    position: relative;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-                    .image-main-square {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
+                    .image-main-square-numbers {
+                        font-family: "DM Sans";
+                        font-size: 22px;
+                        font-weight: bold;
+                        line-height: 33px;
+                        font-style: normal;
+                        text-align: center;
+                        color: #191919;
                         position: absolute;
-                        width: 56px;
-                        height: 64px;
-                        background: #f9d783;
-                        top: 16px;
-                        left: 16px;
+                        top: 5px;
+                    }
 
-                        .image-main-square-numbers {
-                            font-family: "DM Sans";
-                            font-size: 22px;
-                            font-weight: bold;
-                            line-height: 33px;
-                            font-style: normal;
-                            text-align: center;
-                            color: #191919;
-                            position: absolute;
-                            top: 35%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-    
-                        .image-main-square-text {
-                            font-family: "Inter";
-                            font-size: 16px;
-                            font-weight: normal;
-                            line-height: 28px;
-                            font-style: normal;
-                            text-align: center;
-                            color: rgba(25,25,25,0.7 );
-                            position: absolute;
-                            top: 75%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
+                    .image-main-square-text {
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-weight: normal;
+                        line-height: 28px;
+                        font-style: normal;
+                        text-align: center;
+                        color: rgba(25, 25, 25, 0.7);
+                        position: absolute;
+                        bottom: 5px;
                     }
                 }
-
-                #header {
-                    margin-top: 28px;
-                }
-
-                p {
-                    font-family: "Inter";
-                    font-size: 16px;
-                    font-weight: normal;
-                    line-height: 28px;
-                    font-style: normal;
-                    text-align: left;
-                    color: rgba(25,25,25,0.7 );
-                }
-
-                h3 {
-                    font-family: "DM Sans";
-                    font-size: 22px;
-                    font-weight: bold;
-                    line-height: 33px;
-                    font-style: normal;
-                    text-align: left;
-                    color: #191919;
-                    margin-top: 21px;
-                    margin-bottom: 20px;
-                }
             }
 
-            .Implement {
-
-                .image-text {
-                    position: relative;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-                    .image-main-square {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        position: absolute;
-                        width: 56px;
-                        height: 64px;
-                        background: #f9d783;
-                        top: 16px;
-                        left: 16px;
-
-                        .image-main-square-numbers {
-                            font-family: "DM Sans";
-                            font-size: 22px;
-                            font-weight: bold;
-                            line-height: 33px;
-                            font-style: normal;
-                            text-align: center;
-                            color: #191919;
-                            position: absolute;
-                            top: 35%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-    
-                        .image-main-square-text {
-                            font-family: "Inter";
-                            font-size: 16px;
-                            font-weight: normal;
-                            line-height: 28px;
-                            font-style: normal;
-                            text-align: center;
-                            color: rgba(25,25,25,0.7 );
-                            position: absolute;
-                            top: 75%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-                    }
-                }
-
-                #header {
-                    margin-top: 28px;
-                }
-
-                p {
-                    font-family: "Inter";
-                    font-size: 16px;
-                    font-weight: normal;
-                    line-height: 28px;
-                    font-style: normal;
-                    text-align: left;
-                    color: rgba(25,25,25,0.7 );
-                }
-
-                h3 {
-                    font-family: "DM Sans";
-                    font-size: 22px;
-                    font-weight: bold;
-                    line-height: 33px;
-                    font-style: normal;
-                    text-align: left;
-                    color: #191919;
-                    margin-top: 21px;
-                    margin-bottom: 20px;
-                }
+            p {
+                font-family: "Inter";
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 26px;
+                font-style: normal;
+                color: #6a6c71;
             }
 
-            .Support-Modern {
+            h2 {
+                font-family: "DM Sans";
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 33px;
+                font-style: normal;
+                color: #191919;
+            }
 
-                .image-book {
-                    position: relative;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-                    .image-main-square {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        position: absolute;
-                        width: 56px;
-                        height: 64px;
-                        background: #f9d783;
-                        top: 16px;
-                        left: 16px;
-
-                        .image-main-square-numbers {
-                            font-family: "DM Sans";
-                            font-size: 22px;
-                            font-weight: bold;
-                            line-height: 33px;
-                            font-style: normal;
-                            text-align: center;
-                            color: #191919;
-                            position: absolute;
-                            top: 35%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-    
-                        .image-main-square-text {
-                            font-family: "Inter";
-                            font-size: 16px;
-                            font-weight: normal;
-                            line-height: 28px;
-                            font-style: normal;
-                            text-align: center;
-                            color: rgba(25,25,25,0.7 );
-                            position: absolute;
-                            top: 75%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-                    }
-                }
-
-                #header {
-                    margin-top: 28px;
-                }
-
-                p {
-                    font-family: "Inter";
-                    font-size: 16px;
-                    font-weight: normal;
-                    line-height: 28px;
-                    font-style: normal;
-                    text-align: left;
-                    color: rgba(25,25,25,0.7 );
-                }
-
-                h3 {
-                    font-family: "DM Sans";
-                    font-size: 22px;
-                    font-weight: bold;
-                    line-height: 33px;
-                    font-style: normal;
-                    text-align: left;
-                    color: #191919;
-                    margin-top: 21px;
-                    margin-bottom: 20px;
-                }
+            .article-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
             }
         }
 
@@ -2464,13 +2299,15 @@ html, body {
             display: flex;
             justify-content: center;
             align-items: center;
-          }
-          
-          .menu-item {
+            margin-top: 94px;
+            margin-bottom: 84px;
+        }
+
+        .menu-item {
             padding: 5px;
-          }
-          
-          .box {
+        }
+
+        .box {
             display: inline-block;
             width: 38px;
             height: 38px;
@@ -2480,14 +2317,14 @@ html, body {
             border-radius: 10px;
             font-weight: bold;
             font-size: 16px;
-          
+
             &.black-box {
-              background-color: black;
-              color: white;
+                background-color: black;
+                color: white;
             }
-          
+
             &:hover {
-              border-color: black;
+                border-color: black;
             }
         }
     }
