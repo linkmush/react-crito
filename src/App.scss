@@ -1919,228 +1919,77 @@ html, body {
                 display: none;
             }
 
-            .digitalization {
+            .Article-news {
+                display: flex;
 
-                .image-women-main {
-                    position: relative;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                .articles-main-news {
 
-                    .image-main-square {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        position: absolute;
-                        width: 56px;
-                        height: 64px;
-                        background: #f9d783;
-                        top: 16px;
-                        left: 16px;
-
-                        .image-main-square-numbers {
-                            font-family: "DM Sans";
-                            font-size: 22px;
-                            font-weight: bold;
-                            line-height: 33px;
-                            font-style: normal;
-                            text-align: center;
-                            color: #191919;
-                            position: absolute;
-                            top: 35%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
+                    .article-image-news {
+                        position: relative;
+                        width: 420px;
+                        height: 230px;
+        
+                        img {
+                            width: 100%;
+                            height: 100%;
                         }
-    
-                        .image-main-square-text {
-                            font-family: "Inter";
-                            font-size: 16px;
-                            font-weight: normal;
-                            line-height: 28px;
-                            font-style: normal;
-                            text-align: center;
-                            color: rgba(25,25,25,0.7 );
+        
+                        .orange-boxs {
                             position: absolute;
-                            top: 75%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-                    }
-                }
-
-                #header {
-                    margin-top: 28px;
-                }
-
-                p {
-                    font-family: "Inter";
-                    font-size: 16px;
-                    font-weight: normal;
-                    line-height: 28px;
-                    font-style: normal;
-                    text-align: left;
-                    color: rgba(25,25,25,0.7 );
-                }
-
-                h3 {
-                    font-family: "DM Sans";
-                    font-size: 22px;
-                    font-weight: bold;
-                    line-height: 33px;
-                    font-style: normal;
-                    text-align: left;
-                    color: #191919;
-                    margin-top: 21px;
-                    margin-bottom: 20px;
-                }
-            }
-
-            .Implement {
-
-                .image-text {
-                    position: relative;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-                    .image-main-square {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        position: absolute;
-                        width: 56px;
-                        height: 64px;
-                        background: #f9d783;
-                        top: 16px;
-                        left: 16px;
-
-                        .image-main-square-numbers {
-                            font-family: "DM Sans";
-                            font-size: 22px;
-                            font-weight: bold;
-                            line-height: 33px;
-                            font-style: normal;
+                            width: 56px;
+                            height: 64px;
+                            background: #f9d783;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
                             text-align: center;
-                            color: #191919;
-                            position: absolute;
-                            top: 35%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-    
-                        .image-main-square-text {
-                            font-family: "Inter";
-                            font-size: 16px;
-                            font-weight: normal;
-                            line-height: 28px;
-                            font-style: normal;
-                            text-align: center;
-                            color: rgba(25,25,25,0.7 );
-                            position: absolute;
-                            top: 75%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
+                            top: 10px;
+                            left: 10px;
+        
+                            .image-main-news-numbers {
+                                font-family: "DM Sans";
+                                font-size: 22px;
+                                font-weight: bold;
+                                line-height: 33px;
+                                font-style: normal;
+                                text-align: center;
+                                color: #191919;
+                                position: absolute;
+                                top: 5px;
+                            }
+        
+                            .image-main-news-text {
+                                font-family: "Inter";
+                                font-size: 16px;
+                                font-weight: normal;
+                                line-height: 28px;
+                                font-style: normal;
+                                text-align: center;
+                                color: rgba(25, 25, 25, 0.7);
+                                position: absolute;
+                                bottom: 5px;
+                            }
                         }
                     }
-                }
-
-                #header {
-                    margin-top: 28px;
-                }
-
-                p {
-                    font-family: "Inter";
-                    font-size: 16px;
-                    font-weight: normal;
-                    line-height: 28px;
-                    font-style: normal;
-                    text-align: left;
-                    color: rgba(25,25,25,0.7 );
-                }
-
-                h3 {
-                    font-family: "DM Sans";
-                    font-size: 22px;
-                    font-weight: bold;
-                    line-height: 33px;
-                    font-style: normal;
-                    text-align: left;
-                    color: #191919;
-                    margin-top: 21px;
-                    margin-bottom: 20px;
-                }
-            }
-
-            .Support-Modern {
-
-                .image-book {
-                    position: relative;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-                    .image-main-square {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        position: absolute;
-                        width: 56px;
-                        height: 64px;
-                        background: #f9d783;
-                        top: 16px;
-                        left: 16px;
-
-                        .image-main-square-numbers {
-                            font-family: "DM Sans";
-                            font-size: 22px;
-                            font-weight: bold;
-                            line-height: 33px;
-                            font-style: normal;
-                            text-align: center;
-                            color: #191919;
-                            position: absolute;
-                            top: 35%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-    
-                        .image-main-square-text {
-                            font-family: "Inter";
-                            font-size: 16px;
-                            font-weight: normal;
-                            line-height: 28px;
-                            font-style: normal;
-                            text-align: center;
-                            color: rgba(25,25,25,0.7 );
-                            position: absolute;
-                            top: 75%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                        }
+        
+                    p {
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-weight: normal;
+                        line-height: 26px;
+                        font-style: normal;
+                        color: #6a6c71;
                     }
-                }
-
-                #header {
-                    margin-top: 28px;
-                }
-
-                p {
-                    font-family: "Inter";
-                    font-size: 16px;
-                    font-weight: normal;
-                    line-height: 28px;
-                    font-style: normal;
-                    text-align: left;
-                    color: rgba(25,25,25,0.7 );
-                }
-
-                h3 {
-                    font-family: "DM Sans";
-                    font-size: 22px;
-                    font-weight: bold;
-                    line-height: 33px;
-                    font-style: normal;
-                    text-align: left;
-                    color: #191919;
-                    margin-top: 21px;
-                    margin-bottom: 20px;
+        
+                    h2 {
+                        font-family: "DM Sans";
+                        font-size: 22px;
+                        font-weight: bold;
+                        line-height: 33px;
+                        font-style: normal;
+                        color: #191919;
+                    }
                 }
             }
         }

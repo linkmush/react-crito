@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import SectionTitle from './Generics/SectionTitle'
 import Button from './Generics/Button'
-import ArticleBoxes from './ArticleBoxes'
+import ArticleGet from './ArticleGet'
 
 const ArticleDetails = () => {
   return (
@@ -16,9 +16,7 @@ const ArticleDetails = () => {
                     <Button type="transparent" text="Browse Articles" url="/services/consulting" />
                 </div>
             <div className="articles-details">
-                <ArticleBoxes id={1} />
-                <ArticleBoxes id={2} />
-                <ArticleBoxes id={3} />
+                <ArticleGet />
             </div>
             <ul className="dots-menu-details">
                 <li className="dots-menu-2"><Link to="/"></Link></li>

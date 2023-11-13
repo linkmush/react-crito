@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import NewsShowcase from '../components/NewsShowcase';
 import Footer from '../components/Footer';
 import FooterBottom from '../components/FooterBottom';
-import ArticleDetails from '../components/ArticleDetails';
+import ArticleNews from '../components/ArticleNews';
 import DetailsMain from '../components/DetailsMain';
 
 const NewsDetails = () => {
@@ -15,7 +15,7 @@ const NewsDetails = () => {
     <main>
     <NewsShowcase />
     <DetailsMain />
-    <ArticleDetails />
+    <ArticleNews />
     </main>
     <Footer />
     <FooterBottom />
