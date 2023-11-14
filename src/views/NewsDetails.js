@@ -5,8 +5,8 @@ import Header from '../components/Header';
 import NewsShowcase from '../components/NewsShowcase';
 import Footer from '../components/Footer';
 import FooterBottom from '../components/FooterBottom';
-import ArticleNews from '../components/ArticleNews';
 import DetailsMain from '../components/DetailsMain';
+import ArticleDetails from '../components/ArticleDetails';
 
 const NewsDetails = () => {
   return (
@@ -15,7 +15,7 @@ const NewsDetails = () => {
     <main>
     <NewsShowcase />
     <DetailsMain />
-    <ArticleNews />
+    <ArticleDetails />
     </main>
     <Footer />
     <FooterBottom />

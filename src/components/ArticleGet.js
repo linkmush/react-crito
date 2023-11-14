@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { useArticles } from './Generics/ArticleContext'
 
 const ArticleGet = () => {
@@ -21,18 +22,20 @@ const ArticleGet = () => {
         <div className="Article-news">
             {specificArticles.map(article => (
                 <div key={article.id} className="articles-main-news">
-                    <div className="article-image-news">
-                        <img src={article.imageUrl} alt={article.title} />
-                        <div className="orange-boxs">
-                            <div className="image-main-news-numbers">{new Date(article.published).getDate()}</div>
-                            <div className="image-main-news-text">{new Date(article.published).toLocaleString('default', { month: 'short' })}</div>
+                    <Link to={`/newsdetails/${article.id}`}>
+                        <div className="article-image-news">
+                            <img src={article.imageUrl} alt={article.title} />
+                            <div className="orange-boxs">
+                                <div className="image-main-news-numbers">{new Date(article.published).getDate()}</div>
+                                <div className="image-main-news-text">{new Date(article.published).toLocaleString('default', { month: 'short' })}</div>
+                            </div>
                         </div>
-                    </div>
-                    <p>Author: {article.author}</p>
-                    <h2>{article.title}</h2>
-                    <p>{article.content}</p>
-                    <p>Published: {article.published}</p>
-                    <p>Category: {article.category}</p>
+                        <p>Author: {article.author}</p>
+                        <h2>{article.title}</h2>
+                        <p>{article.content}</p>
+                        <p>Published: {article.published}</p>
+                        <p>Category: {article.category}</p>
+                    </Link>
                 </div>
             ))}
         </div>
