@@ -1,8 +1,8 @@
 import React from 'react'
 
-import ArticleBoxes from './ArticleBoxes'
 import SectionTitle from './Generics/SectionTitle'
 import ArticleList from './ArticleList'
+import Pagination from './Generics/Pagnation'
 
 const ArticleMain = () => {
   return (
@@ -15,44 +15,8 @@ const ArticleMain = () => {
                 </div>
                     <div className="articles-main-second">
                     <ArticleList />
-                    </div>
-                <div className="menu">
-                <div className="menu-item">
-                    <span className="box">
-                    &lt;
-                    </span>
-                </div>
-                <div className="menu-item">
-                    <span className="box black-box">
-                    1
-                    </span>
-                </div>
-                <div className="menu-item">
-                    <span className="box">
-                    2
-                    </span>
-                </div>
-                <div className="menu-item">
-                    <span className="box">
-                    3
-                    </span>
-                </div>
-                <div className="menu-item">
-                    <span className="dots-menu-item">
-                    ...
-                    </span>
-                </div>
-                <div className="menu-item">
-                    <span className="box">
-                    9
-                    </span>
-                </div>
-                <div className="menu-item">
-                    <span className="box">
-                    &gt;
-                    </span>
-                </div>
-                </div>
+                    <Pagination />
+            </div>
         </div>
     </section>
   )

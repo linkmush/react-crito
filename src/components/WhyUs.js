@@ -16,10 +16,10 @@ const WhyUs = () => {
               titleClassName="header-tags-p"
               descriptionClassName="header-tags-h2"
             />
-              <WhyusBoxes id={1} />
-              <WhyusBoxes id={2} />
-              <WhyusBoxes id={3} />
-              <WhyusBoxes id={4} />
+            <WhyusBoxes icon={<ion-icon name="thumbs-up-outline"></ion-icon>} title="Process Excellence" text="Lorem, ipsum dolor sit amet consectetur." />
+            <WhyusBoxes icon={<ion-icon name="nuclear-outline"></ion-icon>} title="Strategic Planning" text="Lorem, ipsum dolor sit amet consectetur." />
+            <WhyusBoxes icon={<ion-icon name="construct-outline"></ion-icon>} title="Experience Design" text="Lorem, ipsum dolor sit amet consectetur." />
+            <WhyusBoxes icon={<ion-icon name="person-add-outline"></ion-icon>} title="Artificial Intelligence" text="Lorem, ipsum dolor sit amet consectetur." />
           </div>
           <div>
               <div className="why-choose-us-img">

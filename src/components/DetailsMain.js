@@ -32,7 +32,9 @@ const DetailsMain = () => {
                         </div>
                             <div className="details-description">
                                 <p>{article.published}</p>
+                                <span class="dot"></span>
                                 <p>{article.category}</p>
+                                <span class="dot"></span>
                                 <p>{article.author}</p>
                             </div>
                             <div className="details-img">
@@ -40,11 +42,14 @@ const DetailsMain = () => {
                             </div>
                             <p>{article.content}</p>
                             <DetailsText />
-                            {/* <div className="details-buttons">
-                                {article.category.map((category) => (
-                                <GreyButton key={category} text={category} url="/newsdetails" />
-                            ))}
-                        </div> */}
+                            <div className="details-buttons">
+                            <GreyButton type="grey" text="Digitalization" />
+                            <GreyButton type="grey" text="School" />
+                            <GreyButton type="grey" text="IT" />
+                            <GreyButton type="grey" text="Design" />
+                            <GreyButton type="grey" text="Work" />
+                            <GreyButton type="grey" text="Tech" />
+                            </div>
                     </div>
                 ) : (
                     <div>Loading...</div>

@@ -18,13 +18,13 @@ const ArticleDetails = () => {
             <div className="articles-details">
                 <ArticleGet />
             </div>
-            <ul className="dots-menu-details">
-                <li className="dots-menu-2"><Link to="/"></Link></li>
-                <li className="dots-menu-li"><Link to="/"></Link></li>
-                <li className="dots-menu-li"><Link to="/"></Link></li>
-                <li className="dots-menu-li"><Link to="/"></Link></li>
-                <li className="dots-menu-li"><Link to="/"></Link></li>
-            </ul>
+            <div className="center-content">
+                  <Link to='/'><i className="fa-solid fa-circle"></i></Link>
+                  <Link to='/' className="active"><i className="fa-solid fa-circle"></i></Link>
+                  <Link to='/'><i className="fa-solid fa-circle"></i></Link>
+                  <Link to='/'><i className="fa-solid fa-circle"></i></Link>
+                  <Link to='/'><i className="fa-solid fa-circle"></i></Link>
+            </div>
         </div>
     </section>
   )

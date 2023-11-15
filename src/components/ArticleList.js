@@ -5,11 +5,6 @@ import { useArticles } from './Generics/ArticleContext'
 const ArticleList = () => {
     const { articles, getArticles } = useArticles();
 
-    useEffect(() => {
-        //console.log('useEffect körs!')
-        getArticles();
-    }, []);
-
     return (
         <div className="Articles">
             <div className="article-grid">
