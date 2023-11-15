@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useArticles } from './Generics/ArticleContext';
+import { useArticles } from './Generics/ArticleContext'
 
 const ArticleList = () => {
-    const { Articles, getArticles } = useArticles();
+    const { articles, getArticles } = useArticles();
 
     useEffect(() => {
-        console.log('useEffect körs!')
+        //console.log('useEffect körs!')
         getArticles();
     }, []);
 
@@ -14,7 +14,7 @@ const ArticleList = () => {
         <div className="Articles">
             <div className="article-grid">
                 {
-                    Articles.map(article => (
+                    articles.map(article => (
                         <div key={article.id} className="articles-main-second">
                             <Link to={`/newsdetails/${article.id}`}>
                                 <div className="article-image">
@@ -24,11 +24,11 @@ const ArticleList = () => {
                                             <div className="image-main-square-text">{new Date(article.published).toLocaleString('default', { month: 'short' })}</div>
                                         </div>
                                 </div>
-                                <p>Author: {article.author}</p>
+                                <p>{article.author}</p>
                                 <h2>{article.title}</h2>
                                 <p>{article.content}</p>
-                                <p>Published: {article.published}</p>
-                                <p>Category: {article.category}</p>
+                                <p>{article.published}</p>
+                                <p>{article.category}</p>
                             </Link>
                         </div>
                     ))
@@ -38,4 +38,4 @@ const ArticleList = () => {
     )
 }
 
-export default ArticleList;
+export default ArticleList

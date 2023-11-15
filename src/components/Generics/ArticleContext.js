@@ -5,20 +5,20 @@ export const useArticles = () => useContext(ArticleContext)
 
 export const ArticleProvider = ({children}) => {
     const apiUrl = "https://win23-assignment.azurewebsites.net/api/articles"
-    const [Articles, setArticles] = useState ([])
-    const [Article, setArticle] = useState (null)
+    const [articles, setArticles] = useState ([])
+    const [article, setArticle] = useState (null)
 
     useEffect(() => {
         getArticles()
     }, [])
 
-    const CreateArticle = async (Article) => {
+    const CreateArticle = async (article) => {
         const result = await fetch(apiUrl, {
             method: 'post',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(Article)
+            body: JSON.stringify(article)
         });
     
         if (result.status === 200) {
@@ -35,7 +35,7 @@ export const ArticleProvider = ({children}) => {
 
     const getArticle = async (id) => {
         const result = await fetch(`${apiUrl}/${id}`)
-        const data = result.json()
+        const data = await result.json()
         setArticle(data)
     }
 
@@ -45,7 +45,7 @@ export const ArticleProvider = ({children}) => {
         })
 
         if (result.status === 200) {
-            const updatedArticles = Articles.filter(Article  => Article.id !== id)
+            const updatedArticles = articles.filter(Article  => article.id !== id)
             getArticles()
         }
     }
@@ -56,7 +56,7 @@ export const ArticleProvider = ({children}) => {
         })
 
         if (result.status === 200) {
-            const updatedArticles = Articles.filter(Article  => Article.id !== id)
+            const updatedArticles = articles.filter(Article  => article.id !== id)
             getArticles()
         }
     }
@@ -66,7 +66,7 @@ export const ArticleProvider = ({children}) => {
     }
 
     return (
-        <ArticleContext.Provider value={{Articles, Article, CreateArticle, getArticle, getArticles, updateArticle, deleteArticle, clearArticle}}>
+        <ArticleContext.Provider value={{articles, article, CreateArticle, getArticle, getArticles, updateArticle, deleteArticle, clearArticle}}>
             {children}
         </ArticleContext.Provider>
     )

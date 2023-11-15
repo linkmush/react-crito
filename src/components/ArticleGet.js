@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useArticles } from './Generics/ArticleContext'
 
 const ArticleGet = () => {
-    const { Articles, getArticles } = useArticles()
+    const { articles, getArticles } = useArticles()
 
     useEffect(() => {
         //console.log('useEffect is körs!');
@@ -16,7 +16,7 @@ const ArticleGet = () => {
         "cc6c2b75-8ee7-4e4e-8a99-66fe89a4b789"
     ]
 
-    const specificArticles = Articles.filter(article => specificArticleIds.includes(article.id))
+    const specificArticles = articles.filter(article => specificArticleIds.includes(article.id))
 
     return (
         <div className="Article-news">
@@ -30,11 +30,11 @@ const ArticleGet = () => {
                                 <div className="image-main-news-text">{new Date(article.published).toLocaleString('default', { month: 'short' })}</div>
                             </div>
                         </div>
-                        <p>Author: {article.author}</p>
+                        <p>{article.author}</p>
                         <h2>{article.title}</h2>
                         <p>{article.content}</p>
-                        <p>Published: {article.published}</p>
-                        <p>Category: {article.category}</p>
+                        <p>{article.published}</p>
+                        <p>{article.category}</p>
                     </Link>
                 </div>
             ))}

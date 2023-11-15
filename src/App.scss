@@ -2474,22 +2474,27 @@ html, body {
                     text-align: center;
                     color: #191919;
                     }
-
-                    .dots-menu {
-                        width: 10px;
-                        height: 10px;
-                        background: #f9d783;
-                        display: inline-block;
-                        margin: 10px;
-                        border-radius: 50%;
-                    }
                 }
 
                 .details-img {
-                    width: 758px;
-                    height: 500px;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                    margin-top: 72px;
+
+                    img {
+                        width: 758px;
+                        height: 500px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                        margin-top: 72px;
+                    }
+                }
+
+                p {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 28px;
+                    font-style: normal;
+                    text-align: left;
+                    color: rgba(25,25,25,0.7 );
+                    margin-top: 20px;
                 }
 
                 .details-text-1 {
@@ -2500,7 +2505,7 @@ html, body {
                     font-style: normal;
                     text-align: left;
                     color: rgba(25,25,25,0.7 );
-                    margin-top: 47px;
+                    margin-top: 30px;
                 }
 
                 .details-text-2 {
