@@ -45,7 +45,7 @@ const ContactForm = () => {
             console.log(response.status)
             break;
           case 400:
-            errorMessage('Invalid form data, please try again.')
+            setErrorMessage('Invalid form data, please try again.')
             console.log(response.status)
             break;
           default:
@@ -73,7 +73,7 @@ const ContactForm = () => {
           </>
         ) : (
           <>
-            <form id="messageForm" onSubmit={formik.handleSubmit}>
+            <form id="messageForm" onSubmit={formik.handleSubmit} noValidate>
             <div className="mb-3 mt-4">
                   <input
                     className="form-input"
