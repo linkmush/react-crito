@@ -13,11 +13,11 @@ const DetailsMain = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    console.log('useEffect körs!')
+    //console.log('useEffect körs!')
     getArticle(id);
 
     return () => clearArticle();
-  }, []);
+  }, [id]);
 
   console.log(article)
 
@@ -32,9 +32,9 @@ const DetailsMain = () => {
                         </div>
                             <div className="details-description">
                                 <p>{article.published}</p>
-                                <span class="dot"></span>
+                                <span className="dot"></span>
                                 <p>{article.category}</p>
-                                <span class="dot"></span>
+                                <span className="dot"></span>
                                 <p>{article.author}</p>
                             </div>
                             <div className="details-img">

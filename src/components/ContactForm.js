@@ -40,7 +40,6 @@ const ContactForm = () => {
         switch (response.status) {
           case 200:
             setStatus('Message sent successfully')
-            alert('Message was sent!')
             setSubmitted(true);
             console.log(response.status)
             break;
