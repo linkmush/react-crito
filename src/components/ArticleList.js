@@ -20,10 +20,10 @@ const ArticleList = () => {
                                         </div>
                                 </div>
                                 <p>{article.author}</p>
+                                <p>{article.category}</p>
                                 <h2>{article.title}</h2>
                                 <p>{article.content}</p>
                                 <p>{article.published}</p>
-                                <p>{article.category}</p>
                             </Link>
                         </div>
                     ))

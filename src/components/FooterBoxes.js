@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FooterBoxes = ({ section }) => {
   switch (section) {
@@ -46,4 +46,4 @@ const FooterBoxes = ({ section }) => {
   }
 }
 
-export default FooterBoxes;
+export default FooterBoxes
