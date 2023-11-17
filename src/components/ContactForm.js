@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
+import React, { useState } from 'react'
+import { useFormik } from 'formik'
+import * as Yup from 'yup'
 
 const ContactForm = () => {
   const emailRegEx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/

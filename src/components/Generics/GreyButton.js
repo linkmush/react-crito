@@ -9,4 +9,4 @@ const GreyButton = ({ text, url }) => {
     )
   }
   
-  export default GreyButton;
+  export default GreyButton
