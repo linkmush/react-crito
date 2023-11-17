@@ -15,11 +15,10 @@ const DetailsMain = () => {
   useEffect(() => {
     //console.log('useEffect körs!')
     getArticle(id);
-
     return () => clearArticle();
   }, [id]);
 
-  console.log(article)
+  //console.log(article)
 
   return (
     <section className="details-main">

@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom'
 import { useArticles } from './Generics/ArticleContext'
 
 const ArticleGet = () => {
-    const { articles, getArticles } = useArticles()
-
-    useEffect(() => {
-        //console.log('useEffect is körs!');
-        getArticles();
-    }, []);
+    const { articles } = useArticles()
 
     const specificArticleIds = [
         "cb24396b-ae21-4c34-a267-d0cd0600aa6d",

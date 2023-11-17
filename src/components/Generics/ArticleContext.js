@@ -9,10 +9,13 @@ export const ArticleProvider = ({children}) => {
     const [article, setArticle] = useState (null)
 
     useEffect(() => {
+        // console.log('context')
+        // if(articles.length > 0) return
         getArticles()
     }, [])
 
     const getArticles = async () => {
+        //console.log('hämtar artiklar')
         const result = await fetch(apiUrl);
         const data = await result.json();
         setArticles(data);

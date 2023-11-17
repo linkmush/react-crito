@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useArticles } from './Generics/ArticleContext'
 
 const ArticleList = () => {
-    const { articles, getArticles } = useArticles();
+    const { articles } = useArticles();
 
     return (
         <div className="Articles">
