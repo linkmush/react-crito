@@ -6,9 +6,10 @@ const ArticleGet = () => {
     const { articles } = useArticles()
 
     const specificArticleIds = [
-        "cb24396b-ae21-4c34-a267-d0cd0600aa6d",
-        "228c829d-4f66-431f-bb20-1b3aed2869b6",
-        "cc6c2b75-8ee7-4e4e-8a99-66fe89a4b789"
+
+        "45dd52ce-27e3-441f-b948-c65b2e233509",
+        "e07be2a4-f0a2-4f76-a196-db6aed1a2bdc",
+        "0fd8762a-0cce-4f33-8c70-37f0b2300478"
     ]
 
     const specificArticles = articles.filter(article => specificArticleIds.includes(article.id))
